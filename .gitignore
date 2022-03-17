@@ -1,0 +1,11 @@
+.svn/
+.git/
+.vscode/
+.idea/
+.history/
+bin/
+build/
+node_modules/
+logs/
+release/
+target/
