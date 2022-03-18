@@ -1,29 +1,34 @@
 {
   "main": {
-    "id": "f6d36e1e89033afa",
+    "id": "a2364141a6cb430f",
     "type": "split",
     "children": [
       {
-        "id": "77b30f47da78132d",
+        "id": "1aa6158607f61765",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "kubernetes/sexy-tips.md",
+            "mode": "preview",
+            "backlinks": false,
+            "source": false
+          }
         }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "a5d6ba15b5b74674",
+    "id": "a3a4b79ca97295fc",
     "type": "split",
     "children": [
       {
-        "id": "cb0ecc39b8bcdf3d",
+        "id": "dcf405e718651fc2",
         "type": "tabs",
         "children": [
           {
-            "id": "6c7d04b30d800eb1",
+            "id": "8a20ae085f8bd210",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -31,7 +36,7 @@
             }
           },
           {
-            "id": "e360896f4a30563b",
+            "id": "bea11ed6b080dae0",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -44,6 +49,14 @@
                 "sortOrder": "alphabetical"
               }
             }
+          },
+          {
+            "id": "f501fd32c28be3cb",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
           }
         ]
       }
@@ -52,36 +65,90 @@
     "width": 300
   },
   "right": {
-    "id": "d9db96c00bee026b",
+    "id": "41d3fde056411c40",
     "type": "split",
     "children": [
       {
-        "id": "b97c61cd2cfdc525",
+        "id": "a5c1ec9e9cf822ea",
         "type": "tabs",
         "children": [
           {
-            "id": "a88b3d4eb4bbdd0d",
+            "id": "d7646dd4f5f9781e",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "kubernetes/sexy-tips.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "e5aaefa4ca515f67",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "8babbd37e820d8ba",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "kubernetes/sexy-tips.md"
+              }
+            }
+          },
+          {
+            "id": "ca2bc40c3de9d3d7",
+            "type": "leaf",
+            "state": {
+              "type": "side-panel-control-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "b1aac67d0ded7dfd",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "kubernetes/sexy-tips.md",
+                "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 294,
     "collapsed": true
   },
-  "active": "77b30f47da78132d",
-  "lastOpenFiles": []
+  "active": "1aa6158607f61765",
+  "lastOpenFiles": [
+    "kubernetes/sexy-tips.md",
+    "kubernetes/microk8s.md",
+    "kubernetes/k8s-install.md",
+    "kubernetes/containers/docker-containerd-K8S.md",
+    "kubernetes/containers/containered.md",
+    "devops/devops-tools.md.md",
+    "devops/nfs.md",
+    "linux/command-grep.md",
+    "linux/command-firewall.md",
+    "linux/command-chmod.md"
+  ]
 }

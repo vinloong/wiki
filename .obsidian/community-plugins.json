@@ -1,13 +1,15 @@
 [
-  "obsidian-auto-link-title",
-  "discordian-plugin",
   "cm-editor-syntax-highlight-obsidian",
   "markdown-prettifier",
-  "nldates-obsidian",
-  "note-refactor-obsidian",
-  "obsidian-outliner",
   "oz-image-plugin",
-  "url-into-selection",
+  "obsidian-auto-link-title",
+  "discordian-plugin",
+  "nldates-obsidian",
+  "obsidian-outliner",
+  "note-refactor-obsidian",
   "obsidian-style-settings",
+  "url-into-selection",
+  "obsidian-markdown-formatting-assistant-plugin",
+  "obsidian-admonition",
   "table-editor-obsidian"
 ]
