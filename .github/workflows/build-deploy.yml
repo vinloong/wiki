@@ -23,7 +23,10 @@ jobs:
 
       - name: setup website
         run: git clone https://github.com/vinloong/docusaurus-website.git website
-
+      
+      - name: note setup
+        run: mkdir -p website/content && mv algorithms/ linux/ others/ -t website/content/
+      
       - name: build
         run: cd website && npm install && npm run build
 
