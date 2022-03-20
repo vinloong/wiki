@@ -25,7 +25,7 @@ jobs:
         run: git clone https://github.com/vinloong/docusaurus-website.git website
       
       - name: note setup
-        run: mkdir -p website/docs && mv README.md algorithms/ kubernetes/ 'dev&ops'/ others/ -t website/docs/
+        run: mv algorithms/ kubernetes/ 'dev&ops'/ others/ -t website/docs/
       
       - name: build
         run: cd website && npm install && npm run build
