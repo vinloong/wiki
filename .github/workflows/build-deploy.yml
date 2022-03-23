@@ -31,5 +31,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         
         with:
-          deploy_token: ${{ secrets.NOTES_DEPLOY_SECRET }}         
+          github_token: ${{ secrets.NOTES_DEPLOY_SECRET }}         
           publish_dir: ./website/build
