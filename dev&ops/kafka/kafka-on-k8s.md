@@ -31,6 +31,6 @@ kubectl run -it --image="registry.cn-hangzhou.aliyuncs.com/gcr_k8s_containers/k8
 
 
 
-[参考1]([Set-up Kafka Cluster using Kubernetes Statefulset - Knoldus Blogs](https://blog.knoldus.com/set-up-kafka-cluster-using-kubernetes-statefulset/#:~:text=Kafka on K8s StatefulSet StatefulSet is the workload,about the ordering and uniqueness of these Pods.?msclkid=584d31f1abd411ecb83887f5596a6c01))
+[Set-up Kafka Cluster using Kubernetes Statefulset - Knoldus Blogs](https://blog.knoldus.com/set-up-kafka-cluster-using-kubernetes-statefulset/#:~:text=Kafka on K8s StatefulSet StatefulSet is the workload,about the ordering and uniqueness of these Pods.?msclkid=584d31f1abd411ecb83887f5596a6c01)
 
-[]([kow3ns/kubernetes-zookeeper: This project contains tools to facilitate the deployment of Apache ZooKeeper on Kubernetes. (github.com)](https://github.com/kow3ns/kubernetes-zookeeper))
+[kow3ns/kubernetes-zookeeper: This project contains tools to facilitate the deployment of Apache ZooKeeper on Kubernetes. (github.com)](https://github.com/kow3ns/kubernetes-zookeeper)
