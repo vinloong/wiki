@@ -73,10 +73,10 @@ $ ./bin/kafka-storage.sh random-uuid
 然后格式化每个节点的数据存储目录：
 
 ```shell
-./bin/kafka-storage.sh format -t <uuid> -c <server_config_location>
+./bin/kafka-storage.sh format -t ${uuid} -c ${server_config_location}
 ```
 
-> 上面 <uuid> 用上一步生成的 `uuid` 替换, <server_config_location> 是每个节点的日志存储目录
+> 上面 ${uuid} 用上一步生成的 `uuid` 替换, ${server_config_location} 是每个节点的日志存储目录
 
 启动 kafka
 
