@@ -1,8 +1,10 @@
 ---
+index: false
+icon: devops
 title: git 提交免密
 date: 2020-03-28
 categories: 
-    - devops
+    - dev&ops
 tags: [git]
 ---
 

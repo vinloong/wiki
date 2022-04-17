@@ -1,14 +1,14 @@
 ---
-title : "没有zookeeper如何部署kafka"
-description: "在没有zookeeper的情况下如何部署kafka"
-lead: ""
-date: 2022-03-25
-lastmod: 2022-03-28
-draft: false
-images: []
-weight: 10
-toc: true
+index: false
+icon: devops
+title: 没有zookeeper如何部署kafka
+date: 2022-03-11
+category:
+  - dev&ops
+tag:
+  - kafka
 ---
+
 
 # 前置条件
 

@@ -1,4 +1,12 @@
-
+---
+index: false
+icon: devops
+title: gitkab in docker
+date: 2020-03-28
+categories: 
+    - dev&ops
+tags: [gitkab]
+---
 
 # 容器安装
 [[../docker/docker volume]]

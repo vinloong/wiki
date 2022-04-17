@@ -1,4 +1,13 @@
-
+---
+index: false
+icon: devops
+title: wsl2 intall systemd
+date: 2022-03-11
+category:
+  - dev&ops
+tag:
+  - wsl
+---
 
 
 

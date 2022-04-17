@@ -1,3 +1,13 @@
+---
+index: false
+title: WSL 快速入门
+date: 2022-04-01
+category:
+  - dev&ops
+tag:
+  - wsl
+---
+
 # 启用WSL
 
 # 在windows 商店安装 ubuntu 20.04

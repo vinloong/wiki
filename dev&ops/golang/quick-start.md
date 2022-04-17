@@ -1,5 +1,13 @@
-
-
+---
+index: false
+icon: devops
+title: golang quick start
+date: 2022-04-01
+category:
+  - dev&ops
+tag:
+  - golang
+---
 
 
 ## 国际惯例

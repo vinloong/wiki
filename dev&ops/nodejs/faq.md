@@ -1,13 +1,12 @@
 ---
-title : ""
-description: ""
-lead: ""
-date: 
-lastmod: 
-draft: false
-images: []
-weight: 10
-toc: true
+index: false
+icon: devops
+title: node faq
+date: 2022-03-11
+category:
+  - dev&ops
+tag:
+  - nodejs
 ---
 
 

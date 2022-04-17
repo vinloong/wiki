@@ -1,3 +1,14 @@
+---
+index: false
+icon: devops
+title: 两步验证(2FA)
+date: 2022-03-11
+category:
+  - dev&ops
+tag:
+  - 2FA
+---
+
 # 启用两步验证(2FA)保护你的SSH连接
 
 > 双重认证（英语：Two-factor authentication，缩写为2FA），又译为双重验证、双因子认证、双因素认证、二元认证，又称两步骤验证（2-Step Verification，又译两步验证），是一种认证方法，使用两种不同的元素，合并在一起，来确认用户的身份，是多因素验证中的一个特例。

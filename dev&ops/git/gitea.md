@@ -1,3 +1,12 @@
+---
+index: false
+icon: devops
+title: gitea in k8s
+date: 2020-03-28
+categories: 
+    - dev&ops
+tags: [gitea]
+---
 
 
 #  设置`storageClass`

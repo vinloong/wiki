@@ -1,3 +1,13 @@
+---
+index: false
+icon: devops
+title: es 数据恢复操作步骤
+date: 2022-04-01
+category:
+  - dev&ops
+tag:
+  - es
+---
 
 # 1. 禁用副本分配
 

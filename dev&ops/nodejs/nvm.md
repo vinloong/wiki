@@ -1,4 +1,13 @@
-
+---
+index: false
+icon: devops
+title: nvm install
+date: 2022-03-11
+category:
+  - dev&ops
+tag:
+  - nvm
+---
 
 
 

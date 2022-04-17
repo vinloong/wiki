@@ -1,3 +1,13 @@
+---
+index: false
+icon: devops
+title: git start
+date: 2020-03-28
+categories: 
+    - dev&ops
+tags: [git]
+---
+
 # 免密设置
 
 ## 第一步 生成密钥对

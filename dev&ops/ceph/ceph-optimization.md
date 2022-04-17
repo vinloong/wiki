@@ -1,13 +1,11 @@
 ---
 title : "ceph 优化"
-description: "ceph 优化"
-lead: ""
 date: 2022-04-05
-lastmod: 2022-04-05
-draft: false
-images: []
-weight: 10
-toc: true
+icon: devops
+category:
+  - dev&ops
+tag:
+  - ceph
 ---
 
 

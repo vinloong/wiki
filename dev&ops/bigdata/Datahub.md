@@ -1,5 +1,13 @@
-**数据治理技术预研**	
-
+---
+index: false
+icon: devops
+title: 数据目录
+date: 2022-04-01
+category:
+  - dev&ops
+tag:
+  - bigdata
+---
 
 
 数据目录，它是数据湖中所有[大数据的目录。](https://www.oracle.com/big-data/guide/what-is-big-data.html)通过将元数据应用于数据湖中的所有内容，数据发现和治理变得更加容易。通过将元数据和分层逻辑应用于传入数据，数据集接收必须要的上下文和可跟踪的血缘关系，以便在工作流中有效使用。数据源像一条条小溪，最终将数据倾倒入数据湖中，如果缺乏数据目录的组织级别，最终数据湖会变成数据沼泽。
@@ -76,11 +84,6 @@ datahub docker quickstart
 
 
 @TODO 启动失败
-
-# 
-
-
-
 
 
 ## Amundsen

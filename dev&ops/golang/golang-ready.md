@@ -1,3 +1,14 @@
+---
+index: false
+icon: devops
+title: go Ready
+date: 2022-04-01
+category:
+  - dev&ops
+tag:
+  - golang
+---
+
 # 启用 go mod 包管理工具
 
 

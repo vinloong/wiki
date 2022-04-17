@@ -1,6 +1,13 @@
-[TOC]
-
-
+---
+index: false
+icon: devops
+title: vs studio 离线安装
+date: 2022-03-11
+category:
+  - dev&ops
+tag:
+  - vs studio
+---
 
 # Visual Studio 离线安装
 
