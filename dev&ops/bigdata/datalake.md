@@ -1,6 +1,6 @@
- `delta`、 `Apache Iceberg` 、`Apache Hudi`
+> `delta`、 `Apache Iceberg` 、`Apache Hudi`
 
-[开源数据湖方案选型：Hudi、Delta、Iceberg深度对比_delta (sohu.com)](https://www.sohu.com/a/403477409_411876)
+[开源数据湖方案选型：Hudi、Delta、Iceberg深度对比_delta](https://www.sohu.com/a/403477409_411876)
 
 `delta` 需求：
 
@@ -12,13 +12,13 @@ delta核心功能特性：
 
 Hudi核心特性：
 
-![image-20220228105254680](https://cdn.jsdelivr.net/gh/vinloong/imgchr@latest/notes/img/202202281524612.png)
+![](https://cdn.jsdelivr.net/gh/vinloong/imgchr@latest/notes/img/202202281524612.png)
 
 
 
 `Iceberg` 核心诉求:
 
-![image-20220228105455152](https://cdn.jsdelivr.net/gh/vinloong/imgchr@latest/notes/img/202202281524757.png)
+![](https://cdn.jsdelivr.net/gh/vinloong/imgchr@latest/notes/img/202202281524757.png)
 
 
 
