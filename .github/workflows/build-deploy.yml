@@ -19,7 +19,7 @@ jobs:
           node-version: '16'
 
       - name: setup website
-        run: git clone https://github.com/vinloong/docusaurus-website.git website
+        run: git clone https://github.com/vinloong/vuepress-theme-hope-custom.git website
       
       - name: note setup
         run: mv algorithms/ kubernetes/ 'dev&ops'/ others/ -t website/docs/
