@@ -4,7 +4,7 @@ icon: devops
 title: python faq
 date: 2022-03-11
 category:
-  - dev&ops
+  - devops
 tag:
   - python
 ---

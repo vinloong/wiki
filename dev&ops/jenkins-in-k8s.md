@@ -1,3 +1,14 @@
+---
+index: false
+icon: devops
+title: jenkins in k8s
+date: 2022-04-01
+category:
+  - devops
+tag:
+  - jenkins
+---
+
 ## 前置条件
 
 - **Docker**

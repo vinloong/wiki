@@ -2,7 +2,7 @@
 title: Jenkins 遇到的问题和解决方案
 date: 2021-06-10
 categories: 
-    - ops
+    - devops
 tags: [jenkins]
 ---
 

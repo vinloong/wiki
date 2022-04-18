@@ -1,4 +1,14 @@
-
+---
+index: false
+icon: devops
+title: 搭建 NFS 服务器
+date: 2022-04-01
+category:
+  - devops
+tag:
+  - nfs
+  - linux
+---
 # 准备
 
 |hostname|ip	|  |

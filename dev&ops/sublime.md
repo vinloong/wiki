@@ -1,4 +1,13 @@
-
+---
+index: false
+icon: devops
+title: sublime 使用技巧
+date: 2022-04-01
+category:
+  - devops
+tag:
+  - sublime
+---
 # 列编辑
 
 ## 方式 一

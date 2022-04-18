@@ -1,3 +1,13 @@
+---
+index: false
+icon: devops
+title: postgres install
+date: 2022-04-01
+category:
+  - devops
+tag:
+  - postgres
+---
 # 安装
 
 ```shell

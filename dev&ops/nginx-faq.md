@@ -1,5 +1,14 @@
-# nginx 
-
+---
+index: false
+icon: devops
+title: nginx 限制IP访问
+date: 2022-04-01
+category:
+  - devops
+tag:
+  - nginx
+---
+# nginx 限制IP访问
 
 
 ## 背景

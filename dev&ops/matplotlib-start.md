@@ -1,4 +1,14 @@
-
+---
+index: false
+icon: devops
+title: JupyterLab quick start
+date: 2022-04-01
+category:
+  - devops
+tag:
+  - JupyterLab 
+  - pynotebook
+---
 
 本地代码调测，使用  `JupyterLab`
 由于我电脑上已经有 `python` 环境,我安装就使用的 `pip`

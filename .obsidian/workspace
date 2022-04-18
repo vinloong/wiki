@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "kubernetes/sexy-tips.md",
+            "file": "kubernetes/kubectl.md",
             "mode": "preview",
             "backlinks": false,
             "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "kubernetes/sexy-tips.md",
+                "file": "kubernetes/kubectl.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,16 +106,8 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kubernetes/sexy-tips.md"
+                "file": "kubernetes/kubectl.md"
               }
-            }
-          },
-          {
-            "id": "ca2bc40c3de9d3d7",
-            "type": "leaf",
-            "state": {
-              "type": "side-panel-control-view",
-              "state": {}
             }
           },
           {
@@ -124,31 +116,38 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "kubernetes/sexy-tips.md",
+                "file": "kubernetes/kubectl.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
+          },
+          {
+            "id": "cf6f9f73ea0519c1",
+            "type": "leaf",
+            "state": {
+              "type": "side-panel-control-view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 294,
-    "collapsed": true
+    "width": 156
   },
   "active": "1aa6158607f61765",
   "lastOpenFiles": [
+    "kubernetes/kubectl.md",
     "kubernetes/sexy-tips.md",
+    "kubernetes/resources.md",
+    "kubernetes/nodes.md",
+    "kubernetes/minikube.md",
     "kubernetes/microk8s.md",
-    "kubernetes/k8s-install.md",
-    "kubernetes/containers/docker-containerd-K8S.md",
-    "kubernetes/containers/containered.md",
-    "devops/devops-tools.md.md",
-    "devops/nfs.md",
-    "linux/command-grep.md",
-    "linux/command-firewall.md",
-    "linux/command-chmod.md"
+    "kubernetes/kubectl-conventions.md",
+    "kubernetes/kubectl-cm-cmds.md",
+    "kubernetes/kube-edge.md",
+    "kubernetes/k8s-upgrade.md"
   ]
 }

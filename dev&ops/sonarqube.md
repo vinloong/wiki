@@ -1,3 +1,13 @@
+---
+index: false
+icon: devops
+title: sonarqube quick start
+date: 2022-04-01
+category:
+  - devops
+tag:
+  - sonarqube
+---
 # 服务端部署
 
 ```yaml

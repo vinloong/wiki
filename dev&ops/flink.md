@@ -1,4 +1,13 @@
-
+---
+index: false
+icon: devops
+title: flink 三种部署模式
+date: 2022-04-01
+category:
+  - devops
+tag:
+  - flink
+---
 
 # 三种部署模式
 

@@ -1,4 +1,14 @@
-CI/CD 工具链
+---
+index: false
+icon: devops
+title: CI/CD 工具链
+date: 2022-04-01
+category:
+  - dev&ops
+tag:
+  - tools
+---
+
 
 
  ![](https://cdn.jsdelivr.net/gh/vinloong/imgchr@latest/notes/img/202201201545543.png)
