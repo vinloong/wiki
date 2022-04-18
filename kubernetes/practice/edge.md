@@ -6,43 +6,6 @@ categories:
 tags: []
 ---
 
-<div align='center' ><b><font size='70'> 几个具备云边协同的边缘框架 </font></b></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<center> author: Uncle Dragon </center>
-
-
-<center>   date: 2021-07-03 </center>
-
-
-<div STYLE="page-break-after: always;"></div>
-
-[TOC]
-
-<div STYLE="page-break-after: always;"></div>
-
-
 # 几个具备云边协同的边缘框架
 
 |                | KubeEdge | Baetyl | SuperEdge | OpenYurt |     |

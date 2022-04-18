@@ -6,42 +6,6 @@ categories: linux
 tags:  [linux,containerd,mqtt]
 ---
 
-<div align='center' ><b><font size='70'> 初识 Raspberry Pi OS Lite </font></b></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<center> author: Uncle Dragon </center>
-
-
-<center>   date: 2021-07-13 </center>
-
-
-<div STYLE="page-break-after: always;"></div>
-
-[TOC]
-
-<div STYLE="page-break-after: always;"></div>
-
  Raspberry Pi OS Lite  基于 Debian 10 32 位版本的精简版，因此debian 下默认使用的命令，绝大部分它都可以使用。
 
  # set up  Raspberry

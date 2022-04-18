@@ -6,42 +6,6 @@ categories: linux
 tags: [ubuntu,ufw]
 ---
 
-<div align='center' ><b><font size='70'> ubuntu 如何配置防火墙 </font></b></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<center> author: Uncle Dragon </center>
-
-
-<center>   date: 2021-06-22 </center>
-
-
-<div STYLE="page-break-after: always;"></div>
-
-[TOC]
-
-<div STYLE="page-break-after: always;"></div>
-
 
 # 简介
 UFW（Uncomplicated Firewal）是 Ubuntu 下基于 iptables 的接口，旨在简化配置防火墙的过程。默认情况下 UFW 为开启状态，开启时默认为拒绝所有传入链接，并允许所有传出连接。这意味着任何人尝试到达您的服务器将无法连接，而服务器内的任何应用程序能够达到外部世界。

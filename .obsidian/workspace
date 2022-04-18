@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "kubernetes/containers/alpine-glibc.md",
+            "file": "linux/add_sudo_permission_4_new_user.md",
             "mode": "preview",
             "backlinks": false,
             "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "kubernetes/containers/alpine-glibc.md",
+                "file": "linux/add_sudo_permission_4_new_user.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kubernetes/containers/alpine-glibc.md"
+                "file": "linux/add_sudo_permission_4_new_user.md"
               }
             }
           },
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "kubernetes/containers/alpine-glibc.md",
+                "file": "linux/add_sudo_permission_4_new_user.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,15 +139,15 @@
   },
   "active": "1aa6158607f61765",
   "lastOpenFiles": [
-    "kubernetes/containers/alpine-glibc.md",
-    "kubernetes/containers/containered.md",
-    "kubernetes/containers/cri-o-start.md",
-    "kubernetes/containers/image-slim.md",
-    "kubernetes/containers/docker-install.md",
-    "kubernetes/containers/docker-faq.md",
-    "kubernetes/containers/docker-Dockerfile.md",
-    "kubernetes/containers/docker-commond.md",
-    "kubernetes/containers/docker-comm-command.md",
-    "kubernetes/containers/docker_volume.md"
+    "linux/add_sudo_permission_4_new_user.md",
+    "others/wubi_button_map.md",
+    "others/win11-optimization.md",
+    "others/santi.md",
+    "others/pandoc.md",
+    "others/interview.md",
+    "others/history-time-compare.md",
+    "linux/vim_command.md",
+    "linux/vim_command_button_map.md",
+    "linux/Untitled.md"
   ]
 }

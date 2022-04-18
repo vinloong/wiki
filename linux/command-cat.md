@@ -6,7 +6,6 @@ categories:
 tags: [linux]
 ---
 
-[TOC]
 # Linux 常用命令之 cat
 `cat` 是 linux 中使用频率较高的命令之一。
 这个命令有三个主要功能：

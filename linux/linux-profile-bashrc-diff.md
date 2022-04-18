@@ -6,44 +6,6 @@ categories: linux
 tags: [linux]
 ---
 
-<div align='center' ><b><font size='70'> profile 、bashrc 等文件的区别和联系 </font></b></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<center> author: Uncle Dragon </center>
-
-
-<center>   date: 2021-07-23 </center>
-
-
-<div STYLE="page-break-after: always;"></div>
-
-[TOC]
-
-<div STYLE="page-break-after: always;"></div>
-
-
-
 # `profile` 、`bashrc` 等文件的区别和联系
 
 一般配置环境变量时会用到这几个文件，那么这几个文件究竟有什么区别和联系呢？
