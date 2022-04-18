@@ -3,7 +3,7 @@ title: linux 命令之 alias
 date: 2020-10-18
 category: 
     - linux
-tag: [linux]
+tag: [alias]
 ---
 
 ## 设置指令的别名

@@ -1,7 +1,7 @@
 ---
 index: 2
 title:  Ubuntu 中 刷新 DNS 缓存
-# icon: config
+icon: linux
 category:
   - linux
 tag:

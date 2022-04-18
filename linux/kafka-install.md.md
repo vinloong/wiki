@@ -1,3 +1,13 @@
+---
+index: false
+icon: linux
+title: kafka install
+date: 2022-04-18
+category:
+  - linux
+tag:
+  - kafka
+---
 # 利用Ambari 安装
 
 kafka 目录 ： `/usr/hdp/current/kafka-broker`

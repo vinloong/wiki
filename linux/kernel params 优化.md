@@ -1,3 +1,14 @@
+---
+index: false
+icon: linux
+title: linux kernel params 优化
+date: 2022-04-18
+category:
+  - linux
+tag:
+  - linux
+---
+
 ```properties
 # 1：开启严格的反向路径校验。对每个进来的数据包，校验其反向路径是否是最佳路径。如果反向路径不是最佳路径，则直接丢弃该数据包。  
 #  减少DDoS攻击,校验数据包的反向路径，如果反向路径不合适，则直接丢弃数据包，避免过多的无效连接消耗系统资源。  

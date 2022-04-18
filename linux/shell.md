@@ -1,3 +1,14 @@
+---
+index: false
+icon: linux
+title: shell终端彩色文字输出
+date: 2022-04-18
+category:
+  - linux
+tag:
+  - color
+---
+
 # Linux终端彩色文字输出
 
 ## 格式

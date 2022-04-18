@@ -1,3 +1,13 @@
+---
+index: false
+icon: linux
+title: rzsz
+date: 2022-04-18
+category:
+  - linux
+tag:
+  - rzsz
+---
 
 ```shell
 yum  install lrzsz

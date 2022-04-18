@@ -1,11 +1,15 @@
+---
+index: false
+icon: linux
+title: linux-file_system
+date: 2022-04-18
+category:
+  - linux
+tag:
+  - file system
+---
+
 linux 下常见的文件类型有：普通文件、目录、字符设备文件、块设备文件、符号链接文件。
-
-
-
-
-
-
-
 
 
 # 目录结构

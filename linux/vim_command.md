@@ -3,7 +3,7 @@ title: VIM 编辑器
 date: 2020-10-18
 category: 
     - linux
-tag: [linux]
+tag: [vim]
 ---
 
 

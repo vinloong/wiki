@@ -1,3 +1,14 @@
+---
+index: false
+icon: linux
+title: cpuinfo
+date: 2022-04-18
+category:
+  - linux
+tag:
+  - cpuinfo
+---
+
 查看CPU信息
 
 ```bash

@@ -1,4 +1,13 @@
-
+---
+index: false
+icon: linux
+title: ssh-faq
+date: 2022-04-18
+category:
+  - linux
+tag:
+  - ssh
+---
 
 # sshd: no hostkeys available -- exiting
 

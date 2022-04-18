@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "linux/add_sudo_permission_4_new_user.md",
+            "file": "linux/vim_command.md",
             "mode": "preview",
             "backlinks": false,
             "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linux/add_sudo_permission_4_new_user.md",
+                "file": "linux/vim_command.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "linux/add_sudo_permission_4_new_user.md"
+                "file": "linux/vim_command.md"
               }
             }
           },
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linux/add_sudo_permission_4_new_user.md",
+                "file": "linux/vim_command.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,19 +135,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 156
+    "width": 318,
+    "collapsed": true
   },
   "active": "1aa6158607f61765",
   "lastOpenFiles": [
-    "linux/add_sudo_permission_4_new_user.md",
-    "others/wubi_button_map.md",
-    "others/win11-optimization.md",
-    "others/santi.md",
-    "others/pandoc.md",
-    "others/interview.md",
-    "others/history-time-compare.md",
     "linux/vim_command.md",
-    "linux/vim_command_button_map.md",
-    "linux/Untitled.md"
+    "linux/ubuntu-upgrade.md",
+    "linux/ubuntu-ufw.md",
+    "linux/ubuntu-tips.md",
+    "linux/two-factor-authentication.md",
+    "linux/static_ip.md",
+    "linux/ssh-faq.md",
+    "linux/ssh.md",
+    "linux/shell.md",
+    "linux/rzsz.md"
   ]
 }

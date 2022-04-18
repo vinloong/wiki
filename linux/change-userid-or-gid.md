@@ -1,3 +1,13 @@
+---
+index: false
+icon: linux
+title: change-userid-or-gid
+date: 2022-04-18
+category:
+  - linux
+tag:
+  - usermod
+---
 # 修改用户ID和用户组ID
 
 假定原用户和用户组id如下：
@@ -22,5 +32,15 @@ groupmod -g 1001 someone
 ```shell
 find / -user 500 -exec chown -h someone {} \;
 find / -group 500 -exec chgrp -h someone {} \;
+```
+
+设置新增用户 `sudo` 权限
+```bash
+usermod -aG sudo username
+
+一种是修改/etc/sudoers文件，增加一行
+username ALL=(ALL) ALL
+
+一种是修改/etc/passwd 找到自己的用户一行吧里面的用户id改成0
 ```
 

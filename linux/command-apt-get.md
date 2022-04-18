@@ -1,3 +1,14 @@
+---
+index: false
+icon: linux
+title: command-apt-get
+date: 2022-04-18
+category:
+  - linux
+tag:
+  - apt-get
+---
+
 ```shell
  
  # 卸载不需要的依赖关系

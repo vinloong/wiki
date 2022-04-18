@@ -1,9 +1,10 @@
 ---
 title: profile 、bashrc 等文件的区别和联系
-author: Uncle Dragon
 date: 2021-07-23
 category: linux
-tag: [linux]
+tag: 
+  - profile
+  - bashrc
 ---
 
 # `profile` 、`bashrc` 等文件的区别和联系

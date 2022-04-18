@@ -2,8 +2,9 @@
 title: Linux 中常用的命令
 date: 2020-09-28
 category: 
-    - linux
-tag: [linux, linux command]
+  - linux
+tag: 
+  - common command 
 ---
 
 

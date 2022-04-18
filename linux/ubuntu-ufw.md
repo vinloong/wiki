@@ -3,7 +3,7 @@ title: ubuntu 如何配置防火墙
 author: Uncle Dragon
 date: 2021-06-22
 category: linux
-tag: [ubuntu,ufw]
+tag: [ubuntu, ufw]
 ---
 
 

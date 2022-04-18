@@ -1,3 +1,13 @@
+---
+index: false
+icon: linux
+title: command-chown&chgrp
+date: 2022-04-18
+category:
+  - linux
+tag:
+  - chgrp
+---
 ## 1. 修改文件用户组
 
 > chgrp： change group的简写，修改文件所属的用户组

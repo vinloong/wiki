@@ -3,7 +3,7 @@ title: linux 命令之 chmod
 date: 2020-10-18
 category: 
     - linux
-tag: [linux, linux command]
+tag: [chmod]
 ---
 
 chmod

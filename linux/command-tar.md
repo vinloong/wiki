@@ -3,7 +3,7 @@ title: linux 命令 ————  tar
 date: 2020-05-26
 category: 
     - linux
-tag: [linux]
+tag: [tar]
 ---
 
 > 对文件进行打包，默认情况并不会压缩，如果指定了相应的参数，

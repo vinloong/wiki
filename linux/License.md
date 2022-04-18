@@ -1,3 +1,14 @@
+---
+index: false
+icon: linux
+title: License
+date: 2022-04-18
+category:
+  - linux
+tag:
+  - license
+---
+
 大家应该都听到过开源许可协议，但是这玩意儿是干啥的，使用哪一种，有些人就犯嘀咕了。
 
 

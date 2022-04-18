@@ -3,7 +3,7 @@ title: centos firewall
 date: 2020-09-27
 category: 
     - linux
-tag: [linux, linux command]
+tag: [firewall ]
 ---
 
 

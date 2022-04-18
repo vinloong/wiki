@@ -1,3 +1,13 @@
+---
+index: false
+icon: linux
+title: nfs
+date: 2022-04-18
+category:
+  - linux
+tag:
+  - nfs
+---
 
 # 准备
 

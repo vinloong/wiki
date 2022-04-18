@@ -1,4 +1,13 @@
-
+---
+index: false
+icon: linux
+title: ubuntu-upgrade
+date: 2022-04-18
+category:
+  - linux
+tag:
+  - upgrade
+---
 
 
 ```shell

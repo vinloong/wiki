@@ -3,7 +3,7 @@ title: Linux 常用命令之 cat
 date: 2022-01-19
 category: 
     - linux
-tag: [linux]
+tag: [cat]
 ---
 
 # Linux 常用命令之 cat

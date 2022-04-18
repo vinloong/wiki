@@ -3,7 +3,7 @@ title: ubnunru 启用 root 用户登录
 date: 2020-05-26
 category: 
     - devops
-tag: [linux]
+tag: [root]
 ---
 
 

@@ -31,7 +31,7 @@ tag:
 > 设置 > 更新和安全 > OS 内部版本信息
 
 
-<br />![](https://cdn.nlark.com/yuque/0/2021/png/668312/1621772801926-74ee6a22-981d-4835-abda-9b15453ccd63.png#align=left&display=inline&height=449&margin=%5Bobject%20Object%5D&originHeight=449&originWidth=1187&size=0&status=done&style=none&width=1187)<br />![image.png](https://cdn.nlark.com/yuque/0/2021/png/668312/1621773225117-acfb0797-f17b-45cf-a100-4258d511c90b.png#align=left&display=inline&height=262&margin=%5Bobject%20Object%5D&name=image.png&originHeight=262&originWidth=550&size=12246&status=done&style=none&width=550)<br />
+ ![](https://cdn.nlark.com/yuque/0/2021/png/668312/1621772801926-74ee6a22-981d-4835-abda-9b15453ccd63.png#align=left&display=inline&height=449&margin=%5Bobject%20Object%5D&originHeight=449&originWidth=1187&size=0&status=done&style=none&width=1187)<br />![image.png](https://cdn.nlark.com/yuque/0/2021/png/668312/1621773225117-acfb0797-f17b-45cf-a100-4258d511c90b.png#align=left&display=inline&height=262&margin=%5Bobject%20Object%5D&name=image.png&originHeight=262&originWidth=550&size=12246&status=done&style=none&width=550)<br />
 如果你的版本号低于** 18362**，请使用 [Windows 更新助手](https://www.microsoft.com/zh-cn/software-download/windows10) 更新你的 Windows 10 。<br />
 <br />
 

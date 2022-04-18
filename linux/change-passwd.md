@@ -3,7 +3,7 @@ title: 忘记 Linux root 密码
 date: 2020-05-26
 category: 
     - linux
-tag: [linux]
+tag: [passwd]
 ---
 
 

@@ -2,8 +2,8 @@
 title: SSH 免密认证
 date: 2020-09-28
 category: 
-    - devops
-tag: [linux, ssh]
+    - linux
+tag: [ssh]
 ---
 
 

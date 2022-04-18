@@ -1,3 +1,14 @@
+---
+index: false
+icon: linux
+title: Linux-faq
+date: 2022-04-18
+category:
+  - linux
+tag:
+  - faq
+---
+
 # 无法连接网络
 ```shell
 # 1. 查看网关
