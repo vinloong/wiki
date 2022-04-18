@@ -1,9 +1,9 @@
 ---
-title: pandoc
-author: Uncle Dragon
+title: pandoc install
 date: 2021-06-10
-subject: "markdown"
-tag: [markdown]
+category:
+  - tools
+tag: [pandoc]
 ---
 
 
