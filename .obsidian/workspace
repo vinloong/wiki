@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "kubernetes/sexy-tips.md",
-            "mode": "source",
+            "file": "kubernetes/containers/alpine-glibc.md",
+            "mode": "preview",
             "backlinks": false,
             "source": false
           }
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "kubernetes/sexy-tips.md",
+                "file": "kubernetes/containers/alpine-glibc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kubernetes/sexy-tips.md"
+                "file": "kubernetes/containers/alpine-glibc.md"
               }
             }
           },
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "kubernetes/sexy-tips.md",
+                "file": "kubernetes/containers/alpine-glibc.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,15 +139,15 @@
   },
   "active": "1aa6158607f61765",
   "lastOpenFiles": [
-    "kubernetes/sexy-tips.md",
-    "kubernetes/minikube.md",
-    "kubernetes/microk8s.md",
-    "kubernetes/kubectl-conventions.md",
-    "kubernetes/kubectl-cm-cmds.md",
-    "kubernetes/kubectl.md",
-    "kubernetes/kube-edge.md",
-    "kubernetes/k8s-upgrade.md",
-    "kubernetes/k8s-storageclass.md",
-    "kubernetes/k8s-kubectl-label.md"
+    "kubernetes/containers/alpine-glibc.md",
+    "kubernetes/containers/containered.md",
+    "kubernetes/containers/cri-o-start.md",
+    "kubernetes/containers/image-slim.md",
+    "kubernetes/containers/docker-install.md",
+    "kubernetes/containers/docker-faq.md",
+    "kubernetes/containers/docker-Dockerfile.md",
+    "kubernetes/containers/docker-commond.md",
+    "kubernetes/containers/docker-comm-command.md",
+    "kubernetes/containers/docker_volume.md"
   ]
 }

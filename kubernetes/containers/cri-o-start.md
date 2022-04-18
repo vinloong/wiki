@@ -6,43 +6,6 @@ categories:
 tags: []
 ---
 
-<div align='center' ><b><font size='70'> cri-o 安装 </font></b></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<center> author: Uncle Dragon </center>
-
-
-<center>   date: 2021-06-28 </center>
-
-
-<div STYLE="page-break-after: always;"></div>
-
-[TOC]
-
-<div STYLE="page-break-after: always;"></div>
-
-
 # 安装
  配置前置环境
 

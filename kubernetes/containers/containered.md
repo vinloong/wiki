@@ -6,18 +6,6 @@ categories: k8s
 tags: [k8s,containerd]
 ---
 
-<div align='center' ><b><font size='70'>containerd 入门</font></b></div>
-
-<center> author: Uncle Dragon </center>
-
-<center>   date: 2021-06-16 </center>
-
-<div STYLE="page-break-after: always;"></div>
-
-[TOC]
-
-<div STYLE="page-break-after: always;"></div>
-
 ## 安装之前
 
 ```shell
