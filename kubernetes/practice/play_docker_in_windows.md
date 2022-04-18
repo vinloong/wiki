@@ -1,9 +1,9 @@
 ---
 title: 在windows 下使用 docker
 date: 2020-09-27
-categories: 
+category: 
     - devops
-tags: [docker,wsl]
+tag: [docker,wsl]
 ---
 
 ## 升级WSL

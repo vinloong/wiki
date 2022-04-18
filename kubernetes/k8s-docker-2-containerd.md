@@ -1,5 +1,5 @@
 ---
-tags: [containerd, k8s]
+tag: [containerd, k8s]
 title: 切换k8s容器运行时：从docker到containerd
 date: 2021-06-21
 category:

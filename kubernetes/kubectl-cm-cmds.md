@@ -2,8 +2,8 @@
 title: 
 author: Uncle Dragon
 date: 2021-10-13
-categories: 
-tags: [ kubectl ]
+category: 
+tag: [ kubectl ]
 ---
 
 

@@ -1,9 +1,9 @@
 ---
 title: VIM 编辑器
 date: 2020-10-18
-categories: 
+category: 
     - linux
-tags: [linux]
+tag: [linux]
 ---
 
 

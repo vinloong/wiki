@@ -1,8 +1,8 @@
 ---
 title: 单机环境安装 k8s (基于 cri-o)
 date: 2021-06-28
-categories: k8s
-tags: [k8s]
+category: k8s
+tag: [k8s]
 ---
 
 前面步骤与 之前 k8s  搭建无差别。

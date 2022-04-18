@@ -2,8 +2,8 @@
 title: kubectl 介绍
 date: 2021-10-13
 draft: true
-categories: 
-tags: [ kubectl ]
+category: 
+tag: [ kubectl ]
 ---
 
 你可以使用 Kubectl 命令行工具管理 Kubernetes 集群。

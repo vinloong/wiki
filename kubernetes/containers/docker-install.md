@@ -1,9 +1,9 @@
 ---
 title: Ubuntu 中安装 Docker CE
 date: 2020-03-28
-categories: 
+category: 
     - k8s&docker
-tags: [docker,ubuntu]
+tag: [docker,ubuntu]
 ---
 
 ## 准备工作

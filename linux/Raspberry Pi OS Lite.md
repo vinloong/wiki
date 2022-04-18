@@ -2,8 +2,8 @@
 title: 初识 Raspberry Pi OS Lite
 author: Uncle Dragon
 date: 2021-07-13
-categories: linux
-tags:  [linux,containerd,mqtt]
+category: linux
+tag:  [linux,containerd,mqtt]
 ---
 
  Raspberry Pi OS Lite  基于 Debian 10 32 位版本的精简版，因此debian 下默认使用的命令，绝大部分它都可以使用。

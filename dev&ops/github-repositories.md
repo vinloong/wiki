@@ -1,9 +1,9 @@
 ---
 title: 一些开源项目资源整理
 date: 2020-09-29
-categories: 
+category: 
     - devops
-tags: [tools]
+tag: [tools]
 ---
 
 

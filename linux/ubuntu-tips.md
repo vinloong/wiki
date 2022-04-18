@@ -1,9 +1,9 @@
 ---
 title: Ubuntu 使用中的一些小技巧
 date: 2020-04-22
-categories: 
+category: 
     - linux
-tags: [linux]
+tag: [linux]
 ---
 
 ## 1. 更换软件源

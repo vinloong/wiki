@@ -1,9 +1,9 @@
 ---
 title: Linux 设置静态 IP
 date: 2020-05-26
-categories: 
+category: 
     - linux
-tags: [linux]
+tag: [linux]
 ---
 
 ## Ubuntu 

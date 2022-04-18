@@ -1,9 +1,9 @@
 ---
 title: k8s 移除节点
 date: 2020-09-26
-categories: 
+category: 
     - k8s&docker
-tags: [k8s]
+tag: [k8s]
 ---
 
 ## k8s 移除节点

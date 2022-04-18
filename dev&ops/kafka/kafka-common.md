@@ -1,9 +1,9 @@
 ---
 title: kafka 一般操作
 date: 2020-04-30
-categories: 
+category: 
     - devops
-tags: [kafka]
+tag: [kafka]
 ---
 
 

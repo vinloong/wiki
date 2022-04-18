@@ -1,9 +1,9 @@
 ---
 title: docker 容器管理常用命令解析
 date: 2020-04-05
-categories:
+category:
     - k8s&docker
-tags: [docker]
+tag: [docker]
 ---
 
 ## 1 容器生命周期管理

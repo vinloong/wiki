@@ -1,9 +1,9 @@
 ---
 title: ssh 命令解析
 date: 2021-06-09
-categories: 
+category: 
     - linux
-tags: [ssh]
+tag: [ssh]
 ---
 
 安装和配置参考：[免密配置](linux/login_no_passwd.md)

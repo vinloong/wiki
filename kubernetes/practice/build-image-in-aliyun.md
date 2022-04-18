@@ -2,8 +2,8 @@
 title: 利用阿里云构建自己的镜像
 author: Uncle Dragon
 date: 2021-07-23
-categories: k8s&container
-tags: [container]
+category: k8s&container
+tag: [container]
 ---
 
 国内网络环境原因，经常遇到无法拉取的镜像或者镜像拉取特别慢，那么如何自己构建镜像呢，最近试用了阿里云的[容器镜像服务](https://cr.console.aliyun.com/cn-hangzhou/instances) ,还可以。

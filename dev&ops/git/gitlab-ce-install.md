@@ -3,9 +3,9 @@ index: false
 icon: devops
 title: gitkab in docker
 date: 2020-03-28
-categories: 
+category: 
     - dev&ops
-tags: [gitkab]
+tag: [gitkab]
 ---
 
 # 容器安装

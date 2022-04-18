@@ -1,9 +1,9 @@
 ---
 title: 中外历史重大事件对比
 date: 2020-10-18
-categories: 
+category: 
     - others
-tags: [历史]
+tag: [历史]
 ---
 
 > 中外重大历史事件时间对照表

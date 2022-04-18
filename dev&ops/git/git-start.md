@@ -3,9 +3,9 @@ index: false
 icon: devops
 title: git start
 date: 2020-03-28
-categories: 
+category: 
     - dev&ops
-tags: [git]
+tag: [git]
 ---
 
 # 免密设置

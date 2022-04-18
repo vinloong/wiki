@@ -2,8 +2,8 @@
 title: cri-o 安装
 author: Uncle Dragon
 date: 2021-06-28
-categories: 
-tags: []
+category: 
+tag: []
 ---
 
 # 安装

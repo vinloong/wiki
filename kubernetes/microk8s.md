@@ -2,8 +2,8 @@
 title: microk8s 入门
 author: Uncle Dragon
 date: 2021-07-02
-categories: 
-tags: [k8s]
+category: 
+tag: [k8s]
 ---
 
 # 安装：

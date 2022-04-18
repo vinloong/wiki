@@ -1,9 +1,9 @@
 ---
 title: docker 使用中遇到的问题汇总
 date: 2020-04-18
-categories: 
+category: 
     - k8s&docker
-tags: [docker]
+tag: [docker]
 ---
 
 ## Q1: 

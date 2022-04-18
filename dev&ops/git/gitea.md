@@ -3,9 +3,9 @@ index: false
 icon: devops
 title: gitea in k8s
 date: 2020-03-28
-categories: 
+category: 
     - dev&ops
-tags: [gitea]
+tag: [gitea]
 ---
 
 

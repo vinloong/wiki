@@ -2,8 +2,8 @@
 title: containerd 入门
 author: Uncle Dragon
 date: 2021-06-16
-categories: k8s
-tags: [k8s,containerd]
+category: k8s
+tag: [k8s,containerd]
 ---
 
 ## 安装之前

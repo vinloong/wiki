@@ -3,7 +3,7 @@ title: pandoc
 author: Uncle Dragon
 date: 2021-06-10
 subject: "markdown"
-tags: [markdown]
+tag: [markdown]
 ---
 
 

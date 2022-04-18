@@ -1,9 +1,9 @@
 ---
 title: 使用 Prometheus 监控 kafka
 date: 2020-09-26
-categories: 
+category: 
     - devops
-tags: [prometheus,kafka]
+tag: [prometheus,kafka]
 ---
 
 ## 监控配置
