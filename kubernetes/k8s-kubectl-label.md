@@ -1,5 +1,14 @@
 
-
+---
+index: false
+icon: kubernetes
+title: kubectl label 简单使用
+date: 2022-04-01
+category:
+  - kubernetes
+tag:
+  - label
+---
 ```shell
 kubectl label node {node-name} node-role.kubernetes.io/worker=worker
 

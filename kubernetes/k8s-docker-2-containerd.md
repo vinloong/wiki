@@ -1,45 +1,12 @@
 ---
 tags: [containerd, k8s]
 title: 切换k8s容器运行时：从docker到containerd
-created: '2021-06-21T07:09:52.739Z'
-modified: '2021-12-14T01:10:15.797Z'
+date: 2021-06-21
+category:
+  - kubernetes
+tag:
+  - runtime
 ---
-
-<div align='center' ><b><font size='70'> 切换k8s容器运行时:从docker到containerd </font></b></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<center> author: Uncle Dragon </center>
-
-
-<center>   date: 2021-06-21 </center>
-
-
-<div STYLE="page-break-after: always;"></div>
-
-[TOC]
-
-<div STYLE="page-break-after: always;"></div>
 
 # 如何迁移
 

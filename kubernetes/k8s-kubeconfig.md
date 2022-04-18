@@ -1,3 +1,13 @@
+---
+index: false
+icon: kubernetes
+title: kubeconfig quick start
+date: 2022-04-01
+category:
+  - kubernetes
+tag:
+  - kubeconfig
+---
 # kubeconfig 简介
 
 使用 kubeconfig 文件来组织有关集群、用户、命名空间和身份认证机制的信息。`kubectl` 命令行工具使用 kubeconfig 文件来查找选择集群所需的信息，并与集群的 API 服务器进行通信。

@@ -2,7 +2,7 @@
 title: k8s 集群部分常见问题及处理
 date: 2020-08-20
 categories: 
-    - k8s&docker
+    - kubernetes
 tags: [k8s]
 ---
 

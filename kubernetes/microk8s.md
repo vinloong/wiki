@@ -6,43 +6,6 @@ categories:
 tags: [k8s]
 ---
 
-<div align='center' ><b><font size='70'> microk8s 入门 </font></b></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<center> author: Uncle Dragon </center>
-
-
-<center>   date: 2021-07-02 </center>
-
-
-<div STYLE="page-break-after: always;"></div>
-
-[TOC]
-
-<div STYLE="page-break-after: always;"></div>
-
-
 # 安装：
 
 ```shell

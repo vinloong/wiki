@@ -1,3 +1,13 @@
+---
+index: false
+icon: kubernetes
+title: k8s 声明式 API 简介
+date: 2022-04-01
+category:
+  - kubernetes
+tag:
+  - api
+---
 k8s 声明式 API
 
 下面举个例子简单说明下什么是声明式：

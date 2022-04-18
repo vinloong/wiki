@@ -1,46 +1,9 @@
 ---
 title: 单机环境安装 k8s (基于 cri-o)
-author: Uncle Dragon
 date: 2021-06-28
 categories: k8s
 tags: [k8s]
 ---
-
-<div align='center' ><b><font size='70'> 单机环境安装 k8s </font></b></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<center> author: Uncle Dragon </center>
-
-
-<center>   date: 2021-06-28 </center>
-
-
-<div STYLE="page-break-after: always;"></div>
-
-[TOC]
-
-<div STYLE="page-break-after: always;"></div>
 
 前面步骤与 之前 k8s  搭建无差别。
 只是这次是容器运行时是使用的 **CRI-O**

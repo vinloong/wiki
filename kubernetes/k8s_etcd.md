@@ -1,3 +1,13 @@
+---
+index: false
+icon: kubernetes
+title: etcd faq
+date: 2022-04-01
+category:
+  - kubernetes
+tag:
+  - etcd
+---
 # Etcd 架构与实现解析
 
 **Etcd** 按照官方介绍

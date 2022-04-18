@@ -1,3 +1,14 @@
+---
+index: false
+icon: kubernetes
+title: kubernetes quick start
+date: 2022-04-01
+category:
+  - kubernetes
+tag:
+  - start
+---
+
 # 环境准备
 ---
 ## 主机
