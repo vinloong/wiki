@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "linux/vim_command.md",
+            "file": "kubernetes/containers/image-slim.md",
             "mode": "preview",
             "backlinks": false,
             "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linux/vim_command.md",
+                "file": "kubernetes/containers/image-slim.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "linux/vim_command.md"
+                "file": "kubernetes/containers/image-slim.md"
               }
             }
           },
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linux/vim_command.md",
+                "file": "kubernetes/containers/image-slim.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,15 +140,15 @@
   },
   "active": "1aa6158607f61765",
   "lastOpenFiles": [
+    "kubernetes/containers/image-slim.md",
+    "templates/head.md",
+    "linux/busybox-version.md",
+    "SUMMARY.md",
     "linux/vim_command.md",
     "linux/ubuntu-upgrade.md",
     "linux/ubuntu-ufw.md",
     "linux/ubuntu-tips.md",
     "linux/two-factor-authentication.md",
-    "linux/static_ip.md",
-    "linux/ssh-faq.md",
-    "linux/ssh.md",
-    "linux/shell.md",
-    "linux/rzsz.md"
+    "linux/static_ip.md"
   ]
 }
