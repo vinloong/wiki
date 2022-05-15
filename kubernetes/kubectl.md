@@ -8,14 +8,13 @@ tag: [ kubectl ]
 
 你可以使用 Kubectl 命令行工具管理 Kubernetes 集群。
 `kubectl` 在 `$HOME/.kube` 目录中查找一个名为 `config` 的配置文件。
-你可以通过设置 KUBECONFIG 环境变量或设置
-[`--kubeconfig`]()
-参数来指定其它 [kubeconfig]() 文件。
+你可以通过设置 KUBECONFIG 环境变量或设置 `--kubeconfig`
+参数来指定其它 `kubeconfig` 文件。
 
 本文概述了 `kubectl` 语法和命令操作描述，并提供了常见的示例。
 有关每个命令的详细信息，包括所有受支持的参数和子命令，
-请参阅 [kubectl]() 参考文档。
-有关安装说明，请参见[安装 kubectl]() 。
+请参阅 `kubectl` 参考文档。
+有关安装说明，请参见安装 `kubectl` 。
 
 
 
@@ -58,7 +57,7 @@ kubectl [command] [TYPE] [NAME] [flags]
 
   * 用一个或多个文件指定资源：`-f file1 -f file2 -f file<#>`
 
-    * [使用 YAML 而不是 JSON]()
+    * 使用 YAML 而不是 JSON
       因为 YAML 更容易使用，特别是用于配置文件时。
       例子：`kubectl get -f ./pod.yaml`
 
@@ -128,7 +127,7 @@ kubectl [command] [TYPE] [NAME] [flags]
 
 
 
-了解更多有关命令操作的信息，请参阅 [kubectl]() 参考文档。
+了解更多有关命令操作的信息，请参阅 `kubectl` 参考文档。
 
 
 
@@ -206,7 +205,7 @@ kubectl [command] [TYPE] [NAME] [flags]
 ## 输出选项
 
 
-有关如何格式化或排序某些命令的输出的信息，请使用以下部分。有关哪些命令支持各种输出选项的详细信息，请参阅[kubectl]() 参考文档。
+有关如何格式化或排序某些命令的输出的信息，请使用以下部分。有关哪些命令支持各种输出选项的详细信息，请参阅`kubectl`考文档。
 
 
 ### 格式化输出
