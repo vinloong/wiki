@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "kubernetes/containers/image-slim.md",
-            "mode": "preview",
+            "file": "dev&ops/postgresql-optimization.md",
+            "mode": "source",
             "backlinks": false,
             "source": false
           }
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "kubernetes/containers/image-slim.md",
+                "file": "dev&ops/postgresql-optimization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "kubernetes/containers/image-slim.md"
+                "file": "dev&ops/postgresql-optimization.md"
               }
             }
           },
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "kubernetes/containers/image-slim.md",
+                "file": "dev&ops/postgresql-optimization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,15 +140,15 @@
   },
   "active": "1aa6158607f61765",
   "lastOpenFiles": [
-    "kubernetes/containers/image-slim.md",
-    "templates/head.md",
-    "linux/busybox-version.md",
-    "SUMMARY.md",
-    "linux/vim_command.md",
-    "linux/ubuntu-upgrade.md",
-    "linux/ubuntu-ufw.md",
-    "linux/ubuntu-tips.md",
-    "linux/two-factor-authentication.md",
-    "linux/static_ip.md"
+    "dev&ops/postgresql-optimization.md",
+    "linux/linux 性能基准测试工具.md",
+    "dev&ops/postgres.md",
+    "dev&ops/git/gitlab-ce-install.md",
+    "kubernetes/reserve-compute-resources.md",
+    "kubernetes/kubectl.md",
+    "kubernetes/kubectl-cm-cmds.md",
+    "kubernetes/kubectl-conventions.md",
+    "kubernetes/pod.md",
+    "kubernetes/kube-edge.md"
   ]
 }
