@@ -82,7 +82,7 @@ EXPLAIN (ANALYZE,VERBOSE, BUFFERS)
 SELECT "workflowProcessVersion".*, "workflowProcessHistories"."id" AS "workflowProcessHistories.id", "workflowProcessHistories"."procinst_id" AS "workflowProcessHistories.procinstId", "workflowProcessHistories"."form_data" AS "workflowProcessHistories.formData", "workflowProcessHistories"."create_at" AS "workflowProcessHistories.createAt", "workflowProcessHistories"."version_id" AS "workflowProcessHistories.versionId", "workflowProcessHistories"."apply_user" AS "workflowProcessHistories.applyUser" FROM (SELECT "workflowProcessVersion"."id", "workflowProcessVersion"."process_id" AS "processId", "workflowProcessVersion"."deployment_id" AS "deploymentId", "workflowProcessVersion"."procdef_id" AS "procdefId", "workflowProcessVersion"."proc_key" AS "procKey", "workflowProcessVersion"."current", "workflowProcessVersion"."create_at" AS "createAt", "workflowProcessVersion"."form_id" AS "formId", "workflowProcessVersion"."bpmn_json" AS "bpmnJson" FROM "workflow_process_version" AS "workflowProcessVersion" WHERE ( SELECT "version_id" FROM "workflow_process_history" AS "workflowProcessHistories" WHERE ("workflowProcessHistories"."procinst_id" = '2b38bb4a-db44-11ec-9537-82994f65ae9b' AND "workflowProcessHistories"."version_id" = "workflowProcessVersion"."id") LIMIT 10 ) IS NOT NULL LIMIT 10) AS "workflowProcessVersion" INNER JOIN "workflow_process_history" AS "workflowProcessHistories" ON "workflowProcessVersion"."id" = "workflowProcessHistories"."version_id" AND "workflowProcessHistories"."procinst_id" = '2b38bb4a-db44-11ec-9537-82994f65ae9b'
 ```
 
-![](https://cdn.jsdelivr.net/gh/vinloong/imgchr@latest/notes/img/202205292146134.png)
+![](https://raw.githubusercontent.com/vinloong/imgchr/main/notes/img/202205292146134.png)
 
 
 
@@ -201,7 +201,7 @@ Nested Loop
 
 ### [depesz 的 EXPLAIN ANALYZE 工具](https://explain.depesz.com/s/Jrno)
 
-![](https://cdn.jsdelivr.net/gh/vinloong/imgchr@latest/notes/img/202205292216375.png)
+![](https://raw.githubusercontent.com/vinloong/imgchr/main/notes/img/202205292216375.png)
 
 这个执行计划看起来与原始计划有些相似，但看上去好看点。有一些有用的附加功能：
 
@@ -212,7 +212,7 @@ Nested Loop
 
 ### [Dalibo 的EXPLAIN ANALYZE 工具](https://explain.dalibo.com)
 
-![](https://cdn.jsdelivr.net/gh/vinloong/imgchr@latest/notes/img/202205292219726.png)
+![](https://raw.githubusercontent.com/vinloong/imgchr/main/notes/img/202205292219726.png)
 
 最初，显示会隐藏详细信息，但您可以通过单击一个节点来显示它们，就像我对上图中的第二个节点所做的那样。在左侧，您会看到所有节点的小概览，从那里您可以跳转到右侧以获取详细信息。增加价值的功能是：
 

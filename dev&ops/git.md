@@ -4,7 +4,7 @@ Git 分支管理规范
 
 
 
- ![](https://cdn.jsdelivr.net/gh/vinloong/imgchr/notes/img/202204251541347.png)
+ ![](https://raw.githubusercontent.com/vinloong/imgchr/main/notes/img/202204251541347.png)
 
 # 主要的分支：
 
