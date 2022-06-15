@@ -1,12 +1,11 @@
 ---
-index: false
-icon: devops
-title: go 资料
+title: "golang 其他资料"
+linkTitle: "其他资料"
 date: 2022-04-01
-category:
-  - dev&ops
-tag:
-  - golang
+weight: 19
+description: 
+categories: ["dev"]
+tags: ["golang"] 
 ---
 
 

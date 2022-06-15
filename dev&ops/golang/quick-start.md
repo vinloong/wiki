@@ -1,12 +1,11 @@
 ---
-index: false
-icon: devops
-title: golang quick start
+title: "golang quick start"
+linkTitle: "快速入门"
 date: 2022-04-01
-category:
-  - dev&ops
-tag:
-  - golang
+weight: 12
+description: 
+categories: ["dev"]
+tags: ["golang"] 
 ---
 
 

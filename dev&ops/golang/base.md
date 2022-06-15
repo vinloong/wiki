@@ -1,12 +1,11 @@
 ---
-index: false
-icon: devops
-title: go 基础
+title: "golang 基础知识"
+linkTitle: "基础知识"
 date: 2022-04-01
-category:
-  - dev&ops
-tag:
-  - golang
+weight: 13
+description: 
+categories: ["dev"]
+tags: ["golang"] 
 ---
 
 #### 1.  Golang中除了加Mutex锁以外还有哪些方式安全读写共享变量
