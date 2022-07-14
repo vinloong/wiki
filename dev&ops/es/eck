@@ -1,0 +1,125 @@
+
+
+## 使用docker 部署一个集群
+
+```yaml
+version: '2.2'
+services:
+  es01:
+    image: elasticsearch:6.8.23
+    container_name: es01
+    environment:
+      - node.name=es01
+      - cluster.name=es-docker-cluster
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - data01:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+    networks:
+      - elastic
+  es02:
+    image: elasticsearch:6.8.23
+    container_name: es02
+    environment:
+      - node.name=es02
+      - cluster.name=es-docker-cluster
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - "discovery.zen.ping.unicast.hosts=es01"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - data02:/usr/share/elasticsearch/data
+    networks:
+      - elastic
+  es03:
+    image: elasticsearch:6.8.23
+    container_name: es03
+    environment:
+      - node.name=es03
+      - cluster.name=es-docker-cluster
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - "discovery.zen.ping.unicast.hosts=es01"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - data03:/usr/share/elasticsearch/data
+    networks:
+      - elastic
+  kibana:
+    image: kibana:6.8.23
+    container_name: kibana
+    environment:
+      ELASTICSEARCH_HOSTS: http://es01:9200
+    ports:
+      - 5601:5601
+    depends_on:
+      - es01
+    networks:
+      - elastic
+volumes:
+  data01:
+    driver: local
+  data02:
+    driver: local
+  data03:
+    driver: local
+
+networks:
+  elastic:
+    driver: bridge
+
+
+```
+
+
+## Deploy ECK in your Kubernetes cluster
+
+部署 rbac 和 es operator :
+
+```bash
+kubectl create -f https://download.elastic.co/downloads/eck/1.9.1/crds.yaml
+kubectl apply -f https://download.elastic.co/downloads/eck/1.9.1/operator.yaml
+```
+
+你的k8s 版本是 1.16 之前的版本：
+
+```bash
+kubectl create -f https://download.elastic.co/downloads/eck/1.9.1/crds-legacy.yaml
+kubectl apply -f https://download.elastic.co/downloads/eck/1.9.1/operator-legacy.yaml
+```
+
+
+## Deploy an Elasticsearch cluster
+
+```bash
+cat <<EOF | kubectl apply -f -
+apiVersion: elasticsearch.k8s.elastic.co/v1
+kind: Elasticsearch
+metadata:
+  name: quickstart
+spec:
+  version: 8.3.2
+  nodeSets:
+  - name: default
+    count: 1 # 集群节点数
+    config:
+      node.store.allow_mmap: false
+EOF
+```
+
+### CustomResource
+
+
+
