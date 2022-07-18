@@ -105,8 +105,8 @@ systemReserved:
 evictionHard:
   memory.available:  "1Gi"
   nodefs.available:  "10%"
-#  - nodefs.inodesFree: "5%"
-#  - imagefs.available: "15%"
+#  nodefs.inodesFree: "5%"
+#  imagefs.available: "15%"
 ```
 
 ### 主要相关配置解析
