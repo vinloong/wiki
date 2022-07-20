@@ -20,24 +20,22 @@ tag:
  `defalult server` 做如下配置：
 
 ```properties
-server {
-        listen 80 default_server;
-        server_name _;
-        return 403;
-}
-```
 
-上面配置可以限制 ip 访问 80 端口。
+server{
+    listen 80 default_server;
+    listen 443 ssl default_server;
+#    listen 443 ssl http2 default_server;
+#    listen [::]:80 default_server;
+#    listen [::]:443 ssl http2 default_server;
 
-但是 `https:ip:443` 还是可以访问, 所以在域名解析下再增加如下配置：
+    server_name _;
 
-```properties
-server {
-    listen 443 ssl;
-    server_name  <your-domain>;
-    if ($host != $server_name) {
-        return 403;
-    }
+    ssl_certificate   /etc/nginx/certs/root.pem;
+    ssl_certificate_key  /etc/nginx/certs/root.key;
+
+    access_log off;
+
+    return 444;
 }
 
 ```
