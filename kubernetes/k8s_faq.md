@@ -6,8 +6,6 @@ category:
 tag: [k8s]
 ---
 
-# k8s 集群部分常见问题及处理
-
 [TOC]
 
 
@@ -286,6 +284,46 @@ kubectl get deployment -n XXX
 kubectl delete deployment xxx(NAME) -n XXX
 
 ```
+
+
+
+## Orphaned pod found - but volume paths are still present on disk
+
+> Jul 27 15:04:24 jump-01 kubelet[1162]: E0727 15:04:24.635473    1162 kubelet_volumes.go:154] orphaned pod "a7b6a421-5b66-4c5a-bb62-b2917ecebe01" found, but volume paths are still present on disk : There were a total of 3 errors similar to this. Turn up verbosity to see them.
+
+直在刷报错,从错误信息可以推测到，这台计算节点存在一个孤儿Pod,并且该Pod挂载了数据卷(volume)，阻碍了Kubelet对孤儿Pod正常的回收清理
+
+
+
+通过id号,进入kubelet的目录,可以发现里面装的是容器的数据,`etc-hosts`文件中还保留着`podname`
+
+```shell
+# cd /var/lib/kubelet/pods/a7b6a421-5b66-4c5a-bb62-b2917ecebe01
+
+/var/lib/kubelet/pods/a7b6a421-5b66-4c5a-bb62-b2917ecebe01# ls
+containers  etc-hosts  plugins  volumes
+
+/var/lib/kubelet/pods/a7b6a421-5b66-4c5a-bb62-b2917ecebe01# cat etc-hosts 
+# Kubernetes-managed hosts file.
+127.0.0.1	localhost
+::1	localhost ip6-localhost ip6-loopback
+fe00::0	ip6-localnet
+fe00::0	ip6-mcastprefix
+fe00::1	ip6-allnodes
+fe00::2	ip6-allrouters
+172.16.1.180	termail-2509590746-mw56s
+```
+
+### 解决
+
+首先通过etc-hosts文件的pod name 发现已经没有相关的实例在运行了，然后按照issue中的提示，删除pod
+
+```shell
+ rm -rf a7b6a421-5b66-4c5a-bb62-b2917ecebe01
+```
+
+> 但是这个方法有一定的`危险性`，还不确认是否有`数据丢失`的风险，如果可以确认，再执行。或在issue中寻找更好的解决方法
+
 
 
 ## 补充
