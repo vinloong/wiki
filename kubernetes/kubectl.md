@@ -1,5 +1,6 @@
 ---
 title: kubectl 介绍
+id: kubectl-overview
 date: 2021-10-13
 draft: true
 category: 

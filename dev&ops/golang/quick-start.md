@@ -3,7 +3,6 @@ title: "golang quick start"
 linkTitle: "快速入门"
 date: 2022-04-01
 weight: 12
-description: 
 categories: ["dev"]
 tags: ["golang"] 
 ---

@@ -1,6 +1,5 @@
 ---
 title : "快速入门"
-description: ""
 lead: ""
 date: 
 lastmod: 

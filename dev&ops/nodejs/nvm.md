@@ -3,7 +3,6 @@ title: "使用 nvm 管理 nodejs 版本 "
 linkTitle: "使用 nvm 管理 nodejs 版本 "
 date: 2022-04-01
 weight: 13
-description: 
 categories: ["dev"]
 tags: ["nodejs", nvm] 
 ---

@@ -3,7 +3,6 @@ title: "golang 基础知识"
 linkTitle: "基础知识"
 date: 2022-04-01
 weight: 13
-description: 
 categories: ["dev"]
 tags: ["golang"] 
 ---
