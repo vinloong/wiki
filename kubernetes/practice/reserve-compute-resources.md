@@ -95,11 +95,11 @@ enforceNodeAllocatable:
 # kubeReservedCgroup: /kube.slice
 # /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
 kubeReserved:
-  cpu: 1
+  cpu: 1000m
   memory: 2Gi
   ephemeral-storage: 1Gi
 systemReserved:
-  cpu: 1
+  cpu: 1000m
   memory: 2Gi
   ephemeral-storage: 1Gi
 evictionHard:
