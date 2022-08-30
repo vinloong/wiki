@@ -231,6 +231,142 @@ data:
   
 
 
+
+### delete namespace satus 一直处于 Terminating
+
+> namespace一直处于Terminating状态，无法删除
+
+```shell
+➜  ~ kubectl get ns                           
+NAME                              STATUS        AGE
+k8tz                              Active        27d
+kruise-system                     Active        29d
+kube-public                       Active        261d
+kube-system                       Active        261d
+kubernetes-dashboard              Active        159d
+kubesphere-logging-system         Terminating   18h
+kubesphere-monitoring-federated   Active        18h
+kubesphere-monitoring-system      Active        18h
+kubesphere-system                 Active        16h
+openelb-system                    Active        18d
+```
+
+#### 1. 正常删除
+
+```shell
+➜  ~ kubectl delete ns kubesphere-logging-system
+
+# 无响应
+```
+
+#### 2. 强制删除
+
+```shell
+➜  ~ kubectl delete ns kubesphere-logging-system --force --grace-period=0
+warning: Immediate deletion does not wait for confirmation that the running resource has been terminated. The resource may continue to run on the cluster indefinitely.
+namespace "kubesphere-logging-system" force deleted
+
+# 无响应
+```
+
+
+
+#### 3. 编辑删除
+
+> 将 `finalizers` 内容删掉
+
+```shell
+➜  ~ kubectl edit ns kubesphere-logging-system
+
+# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: "2022-08-23T06:57:25Z"
+  deletionTimestamp: "2022-08-24T01:29:23Z"
+  labels:
+    kubernetes.io/metadata.name: kubesphere-logging-system
+  name: kubesphere-logging-system
+  resourceVersion: "69843859"
+  uid: 1755de4b-3f4d-4dd8-9d0f-cb21a0d1616b
+spec:
+  finalizers:
+  - kubernetes  # 删除 , 改成 []
+status:
+  conditions:
+  - lastTransitionTime: "2022-08-24T01:29:29Z"
+    message: All resources successfully discovered
+    reason: ResourcesDiscovered
+    status: "False"
+    type: NamespaceDeletionDiscoveryFailure
+  - lastTransitionTime: "2022-08-24T01:29:29Z"
+    message: All legacy kube types successfully parsed
+    reason: ParsedGroupVersions
+    status: "False"
+    type: NamespaceDeletionGroupVersionParsingFailure
+  - lastTransitionTime: "2022-08-24T01:29:29Z"
+    message: All content successfully deleted, may be waiting on finalization
+    reason: ContentDeleted
+    status: "False"
+    type: NamespaceDeletionContentFailure
+  - lastTransitionTime: "2022-08-24T01:29:29Z"
+    message: 'Some resources are remaining: exporters.events.kubesphere.io has 1 resource
+      instances, rulers.events.kubesphere.io has 1 resource instances'
+    reason: SomeResourcesRemain
+    status: "True"
+    type: NamespaceContentRemaining
+  - lastTransitionTime: "2022-08-24T01:29:29Z"
+    message: 'Some content in the namespace has finalizers remaining: exporters.finalizer.events.kubesphere.io
+      in 1 resource instances, rulers.finalizer.events.kubesphere.io in 1 resource
+      instances'
+    reason: SomeFinalizersRemain
+    status: "True"
+    type: NamespaceFinalizersRemaining
+  phase: Terminating
+```
+
+
+
+#### 4. 调接口删除
+
+
+
+```shell
+
+➜  ~ kubectl get ns kubesphere-logging-system -o json > logging-system.json
+
+➜  ~ vi logging-system.json
+# 删除 spec 及 status 部分,剩下内容如下:
+{   
+    "apiVersion": "v1",
+    "kind": "Namespace",
+    "metadata": {
+        "creationTimestamp": "2022-08-23T06:57:25Z",
+        "deletionTimestamp": "2022-08-24T01:29:23Z",
+        "labels": {
+            "kubernetes.io/metadata.name": "kubesphere-logging-system"
+        },
+        "name": "kubesphere-logging-system",
+        "resourceVersion": "69843859",
+        "uid": "1755de4b-3f4d-4dd8-9d0f-cb21a0d1616b"
+    }
+}
+
+# 启动代理
+➜  ~ kubectl proxy
+
+# 调接口删除
+➜  ~ curl -k -H "Content-Type: application/json" -X PUT --data-binary @logging-system.json http://127.0.0.1:8001/api/v1/namespaces/kubesphere-logging-system/finalize
+```
+
+
+
+
+
+
 ### 其他问题
 
 ```bash

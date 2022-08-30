@@ -119,6 +119,76 @@ spec:
 EOF
 ```
 
+
+
+```yaml
+apiVersion: elasticsearch.k8s.elastic.co/v1
+kind: Elasticsearch
+metadata:
+  name: fs-storage
+  namespace: elastic-system
+spec:
+  http:
+    tls:
+      selfSignedCertificate:
+        disabled: true
+  version: 6.8.23
+  nodeSets:
+  - name: master
+    count: 3
+    config:
+      node.master: true
+      node.data: false
+      node.ingest: false
+      node.ml: false
+      xpack.ml.enabled: false
+      # node.remote_cluster_client: false          
+      node.store.allow_mmap: false
+    podTemplate:
+      spec:
+        containers:
+        - name: elasticsearch
+          env:
+          - name: ES_JAVA_OPTS
+            value: -Xms2g -Xmx2g
+          resources:
+            requests:
+              memory: 2Gi
+              cpu: 4
+            limits:
+              memory: 4Gi
+  - name: data
+    count: 3
+    config:
+      node.master: false
+      node.data: true
+      node.ingest: true
+      node.ml: false
+      xpack.ml.enabled: false
+      # node.remote_cluster_client: false
+      node.store.allow_mmap: false
+    podTemplate:
+      spec:
+        containers:
+        - name: elasticsearch
+          env:
+          - name: ES_JAVA_OPTS
+            value: -Xms2g -Xmx2g
+          resources:
+            requests:
+              memory: 2Gi
+              cpu: 4
+            limits:
+              memory: 4Gi              
+
+```
+
+
+
+
+
+
+
 ### CustomResource
 
 ```yaml
