@@ -183,9 +183,36 @@ spec:
 
 ```
 
+部署 kibana
 
-
-
+```yaml
+apiVersion: kibana.k8s.elastic.co/v1
+kind: Kibana
+metadata:
+  name: kibana
+  namespace: elastic-system
+spec:
+  version: 6.8.23
+  count: 1
+  elasticsearchRef:
+    name: fs-es
+  http:
+    tls:
+      selfSignedCertificate:
+        disabled: false
+  podTemplate:
+    spec:
+      containers:
+      - name: kibana
+        env:
+        - name: I18N_LOCALE
+          value: zh-CN
+        resources:
+          requests:
+            memory: 1Gi
+          limits:
+            memory: 2Gi
+```
 
 
 
