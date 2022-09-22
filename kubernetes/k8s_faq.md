@@ -44,7 +44,13 @@ tag: [k8s]
 ```
 
 
+
+![](https://raw.githubusercontent.com/vinloong/imgchr/main/notes/img/20220914144939.png)
+
+
+
 ## 常见问题及处理
+
 ### Node  NotReady
 
 #### 缺少配置文件
@@ -588,4 +594,14 @@ etcd-0         		Healthy   {"health":"true"}
 > kube-proxy是Kubernetes在每个节点上运行网络代理。如果它出现了异常，则可能导致：
 >
 > - 该节点Pod通信异常
+
+
+
+
+
+
+
+
+
+
 
