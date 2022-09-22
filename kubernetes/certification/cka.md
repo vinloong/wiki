@@ -8,7 +8,8 @@
 
 
 
-## [获取正在运行容器的 Shell](https://kubernetes.io/zh/docs/tasks/debug-application-cluster/get-shell-running-container/)
+
+## [获取正在运行容器的 Shell](https://kubernetes.io/zh-cn/docs/tasks/debug/debug-application/get-shell-running-container/)
 
 
 
@@ -213,3 +214,6 @@
 
 
 ## [Pod 与 Service 的 DNS | Kubernetes](https://kubernetes.io/zh/docs/concepts/services-networking/dns-pod-service/)
+
+
+
