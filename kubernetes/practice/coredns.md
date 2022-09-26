@@ -5,6 +5,16 @@ category: k8s&container
 tag: [coredns]
 ---
 
+## CoreDNS介绍
+
+CoreDNS是Kubernetes集群中负责DNS解析的组件，能够支持解析集群内部自定义服务域名和集群外部域名。
+
+CoreDNS具备丰富的插件集，在集群层面支持自建DNS、自定义hosts、CNAME、rewrite等
+
+ ![](https://raw.githubusercontent.com/vinloong/imgchr/main/notes/img/20220926112222.png)
+
+
+
 ## 合理控制 CoreDNS 副本数
 
 - 1. 根据集群规模预估 coredns 需要的副本数，直接调整 coredns deployment 的副本数:
@@ -160,9 +170,14 @@ replicas = max( ceil( cores * 1/coresPerReplica ) , ceil( nodes * 1/nodesPerRepl
 CoreDNS 有一个 [template](https://coredns.io/plugins/template/) 的插件，可以用它来禁用 IPV6 的解析，只需要给 CoreDNS 加上如下的配置:
 
 ```json
+# 网上查到的配置基本都是下面这样，但是配置了之后会影响dns的正常解析
 template ANY AAAA {
     rcode NXDOMAIN
 }
+
+# 在查询阿里的资料后，用下面的配置测试，没啥问题
+template IN AAAA .
+
 ```
 
 
