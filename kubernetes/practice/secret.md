@@ -47,8 +47,6 @@ kubectl create secret generic db-user-pass \
 
 #### 通过配置文件创建
 
-
-
 ```shell
 $ echo -n 'admin' | base64
 YWRtaW4=
@@ -91,5 +89,25 @@ data:
   username: YWRtaW4=
 stringData:
   username: administrator
+```
+
+
+
+### 查看 
+
+ ```shell
+ kubectl get secrets [-n <namespace>]
+ 
+ kubectl describe secrets db-user-pass
+ 
+ kubectl get secret db-user-pass -o jsonpath='{.data}'
+ 
+ echo 'MWYyZDFlMmU2N2Rm' | base64 --decode
+ 
+ kubectl get secret db-user-pass -o jsonpath='{.data.password}' | base64 --decode
+ ```
+
+```
+
 ```
 
