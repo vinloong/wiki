@@ -12,6 +12,12 @@
 
 禁用 `Windows Search`
 
+## 关闭 SysMain
+
+打开服务：
+
+禁用 `SysMain`
+
 ## 关闭自动更新
 
 禁用 `Windows Update`
