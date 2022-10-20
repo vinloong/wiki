@@ -186,6 +186,8 @@ template IN AAAA .
 
 默认情况下，Kubernetes 集群中的域名解析往往需要经过多次请求才能解析到。
 
+> `/etc/resolv.conf`是DNS客户机配置文件，用于设置DNS服务器的IP地址及DNS域名，还包含了主机的域名搜索顺序。
+
 查看 pod 内 的 `/etc/resolv.conf` 可以知道 `ndots` 选项默认为 5:
 
 ```shell
