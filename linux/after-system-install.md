@@ -124,5 +124,8 @@ sudo apt-get install -y kubelet kubeadm kubectl
 # 安装指定版本
 version=1.18.20-00
 sudo apt-get install -y kubelet=$version kubeadm=$version kubectl=$version
+
+sudo apt-mark hold kubelet kubeadm kubectl
+
 ```
 
