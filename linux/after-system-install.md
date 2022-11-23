@@ -57,6 +57,8 @@ sudo ufw disable
 
 sudo systemctl disable ufw
 
+sudo apt-get purge ufw
+
 ```
 
 ## 禁用 swap
