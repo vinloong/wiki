@@ -52,7 +52,7 @@ network:
 			# 使用dhcp 动态获取ip: true/no
 			dhcp4: no
 			# ipv4 网关
-			gateway4: 192.168.0.1
+			gateway4: 10.8.40.1
 			# dns
 			nameservers: 
 				addresses: [114.114.114.114]

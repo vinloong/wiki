@@ -67,3 +67,31 @@ PUT _cluster/settings
   }
 }
 ```
+
+
+
+
+
+
+
+
+
+### 手动分配分片到节点
+
+```
+POST _cluster/reroute
+{
+  "commands":[
+    {
+      "allocate_stale_primary":{
+        "index": "anxinyun_aggregation",
+        "shard": 1,
+        "node": "es-n4",
+        "accept_data_loss" : true 
+      }
+    }
+    ]
+}
+
+```
+
