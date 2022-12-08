@@ -9,5 +9,33 @@
   
   ```
 
-3. 
-4. 
+
+
+```bash
+ulimit -a
+
+ulimit -n 65535
+ulimit -u 4096
+
+
+vi /etc/security/limits.conf
+elasticsearch  -  nofile  65535
+elasticsearch  -  nproc   4096 
+
+
+swapoff -a
+
+sysctl -w vm.max_map_count=262144
+
+vi /etc/sysctl.conf
+vm.swappiness=1
+vm.max_map_count=262144
+
+
+
+
+vi elasticsearch.yml
+bootstrap.memory_lock: true
+cluster.routing.allocation.same_shard.host: true
+```
+
