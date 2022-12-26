@@ -13,7 +13,7 @@ tag:
 
 ## 1. npm ERR! Unexpected token ’.’
 
-```
+```shell
 npm install
 npm ERR! Unexpected token '.'
 
@@ -23,3 +23,11 @@ npm ERR!     C:\Users\xxx\AppData\Local\npm-cache\_logs\2022-03-28T00_39_58_215Z
 
 > 删除 `C:\Users\xxx\AppData\Roaming\npm-cache` 目录解决
 
+## npm upgrade
+
+```shell
+# 运行 PowerShell as Administrator
+Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force
+npm install --global --production npm-windows-upgrade
+npm-windows-upgrade
+```

@@ -13,6 +13,13 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Dependencies
+/node_modules
+
+# Production
+/build
+
+# xxx
 .svn/
 .git/
 .vscode/
@@ -24,4 +31,5 @@ node_modules/
 logs/
 release/
 target/
+
 
