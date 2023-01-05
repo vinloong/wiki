@@ -6,24 +6,70 @@ category:
 tag: [linux]
 ---
 
-## Ubuntu 
 
-### Ubuntu 16 
-####  修改 `/etc/network/interfaces`
 
-``` bash
-sudo vi  /etc/network/interfaces
+## Debian
+
+```shell
+vi /etc/network/interfaces
+
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+allow-hotplug eno1
+
+iface eno1 inet static
+address 10.8.40.130
+netmask 255.255.255.0
+gateway 10.8.40.1
+dns-nameservers 114.114.114.114 223.5.5.5
+
 ```
 
-<!--more-->
 
-``` ini
-auto eno4
-iface eno4 inet static
-address 10.8.30.176
-netmask 255.255.255.0
-gateway 10.8.30.1
-dns-nameserver 114.114.114.114
+
+## Ubuntu 
+
+### Ubuntu 22
+
+> 编辑 `/etc/netplan/`下的yaml文件
+>
+> 这里文件名是 `00-installer-config.yaml`
+
+```bash
+sudo vi /etc/netplan/00-installer-config.yaml
+
+network:
+  version: 2
+  ethernets:
+    eno1:
+      dhcp4: no
+      addresses:
+      - 10.8.40.125/24
+      routes:
+        - to: default
+          via: 10.8.40.1        
+      nameservers:
+        addresses:
+        - 114.114.114.114
+        - 223.5.5.5
+        search: [localdomain]
+      optional: true
+    eno2:
+      dhcp4: true
+    eno3:
+      dhcp4: true
+    eno4:
+      dhcp4: true
+
+sudo netplan apply
 ```
 
 ### Ubuntu 18.04 +
@@ -63,27 +109,26 @@ network:
 sudo netplan apply
 ```
 
-### 补充
+### Ubuntu 16 
+####  修改 `/etc/network/interfaces`
 
-#### 查看网关
-
-```bash
-# 查看网关
-netstat -rn 
-# 或
-route -n
-
-```
-
-#### 设置默认网关
 ``` bash
-route add default gw 10.8.30.1
+sudo vi  /etc/network/interfaces
 ```
 
-#### 重启网关
-``` bash
-/etc/init.d/networking restart
+<!--more-->
+
+``` ini
+auto eno4
+iface eno4 inet static
+address 10.8.30.176
+netmask 255.255.255.0
+gateway 10.8.30.1
+dns-nameserver 114.114.114.114
 ```
+
+
+
 
 ### 配置 `/etc/resolv.conf`
 > 以上配置完成就可以了
@@ -182,7 +227,6 @@ GATEWAY=192.168.0.1
 ```
 
 
-
 > 修改/etc/sysconfig/network
 
 > 默认为空
@@ -200,3 +244,24 @@ DNS1=114.114.114.114
 service network restart
 ```
 
+## 补充
+
+### 查看网关
+
+```bash
+# 查看网关
+netstat -rn 
+# 或
+route -n
+
+```
+
+### 设置默认网关
+``` bash
+route add default gw 10.8.30.1
+```
+
+### 重启网关
+``` bash
+/etc/init.d/networking restart
+```

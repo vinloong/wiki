@@ -1,6 +1,8 @@
 
 
+## 静态IP
 
+> 略
 
 ##  sudo 免密
 
@@ -9,20 +11,10 @@ sudo visudo
 
 # 在文件中增加一行 ${username} ALL=(ALL) NOPASSWD : ALL
 cloud   ALL=(ALL) NOPASSWD : ALL
+
 ```
 
-
-
-## ssh 免密
-
-```shell
-mkdir -p .ssh
-touch .ssh/authorized_keys
-vi .ssh/authorized_keys 
-# add m1 m2 m3 id_rsa.pub
-```
-
-
+## 启用 root 远程
 
 ```shell
 修改 /etc/ssh/sshd_config:
@@ -38,8 +30,28 @@ PasswordAuthentication no
 ```shell
 cp /etc/apt/sources.list /etc/apt/sources.list.bak
 
+# ubuntu
 sudo sed -i "s/cn.archive.ubuntu.com/mirrors.ustc.edu.cn/g" /etc/apt/sources.list
 sudo sed -i "s/cn.security.ubuntu.com/mirrors.ustc.edu.cn/g" /etc/apt/sources.list
+
+# debian
+sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
+sed -i 's|security.debian.org|mirrors.ustc.edu.cn|g' /etc/apt/sources.list
+
+```
+
+## 安装依赖
+
+```bash
+apt-get install -y socat conntrack ebtables ipset ipvsadm ethtool apt-transport-https ca-certificates
+```
+
+**如果使用 debian 11 增加执行下面命令**
+
+```shell
+mkdir -p /run/systemd/resolve
+
+ln -s /etc/resolv.conf /run/systemd/resolve/resolv.conf
 ```
 
 
@@ -76,12 +88,6 @@ systemctl restart chrony
 
 
 
-
-
-## 静态IP
-
-> 略
-
 ## 关闭防火墙
 
 ```shell
@@ -107,7 +113,7 @@ sudo vi /etc/fstab
 ## 转发 IPv4 
 
 ```shell
-cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf
+cat <<EOF | tee /etc/modules-load.d/k8s.conf
 overlay
 br_netfilter
 EOF
@@ -116,7 +122,7 @@ sudo modprobe overlay
 sudo modprobe br_netfilter
 
 # 设置所需的 sysctl 参数，参数在重新启动后保持不变
-cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
+cat <<EOF | tee /etc/sysctl.d/k8s.conf
 net.bridge.bridge-nf-call-iptables  = 1
 net.bridge.bridge-nf-call-ip6tables = 1
 net.ipv4.ip_forward                 = 1
@@ -127,7 +133,17 @@ sudo sysctl --system
 
 ```
 
-## install containerd
+## install k8s
+
+### use sealos
+
+```shell
+sealos --cluster fs-cloud add --nodes xxx.xxx.xxx.xxx,xxx.xxx.xxx.xxx 
+```
+
+### manual 
+
+#### install containerd
 
 ```shell
 # wget https://gh.api.99988866.xyz/https://github.com/containerd/nerdctl/releases/download/v1.0.0/nerdctl-full-1.0.0-linux-amd64.tar.gz
@@ -140,7 +156,7 @@ sudo systemctl enable --now containerd
 
 
 
-## install kubeadm kubelet kubectl
+#### install kubeadm kubelet kubectl
 
 ```shell
 sudo apt-get update && sudo apt-get install -y apt-transport-https
@@ -163,5 +179,11 @@ sudo apt-get install -y kubelet=$version kubeadm=$version kubectl=$version
 
 sudo apt-mark hold kubelet kubeadm kubectl
 
+```
+
+#### 到主节点获取加入集群指令
+
+```bash
+kubeadm token create --print-join-command
 ```
 
