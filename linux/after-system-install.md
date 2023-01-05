@@ -2,7 +2,7 @@
 
 ## 静态IP
 
-> 略
+[设置静态ip](static_ip.md)
 
 ##  sudo 免密
 
