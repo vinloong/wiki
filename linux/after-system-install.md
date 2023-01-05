@@ -19,7 +19,8 @@ cloud   ALL=(ALL) NOPASSWD : ALL
 ```shell
 修改 /etc/ssh/sshd_config:
 AuthorizedKeysFile      %h/.ssh/authorized_keys %h/.ssh/authorized_keys2 (公钥文件路径)
-PasswordAuthentication no
+
+PermitRootLogin yes
 
 ```
 
