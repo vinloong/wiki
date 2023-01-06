@@ -4,6 +4,20 @@
 
 [设置静态ip](static_ip.md)
 
+## 修改镜像源
+
+```shell
+cp /etc/apt/sources.list /etc/apt/sources.list.bak
+
+# ubuntu
+sudo sed -i "s/cn.archive.ubuntu.com/mirrors.ustc.edu.cn/g" /etc/apt/sources.list
+sudo sed -i "s/cn.security.ubuntu.com/mirrors.ustc.edu.cn/g" /etc/apt/sources.list
+
+# debian
+sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
+sed -i 's|security.debian.org|mirrors.ustc.edu.cn|g' /etc/apt/sources.list
+```
+
 ##  sudo 免密
 
 ```shell
@@ -25,23 +39,6 @@ PermitRootLogin yes
 systemctl restart ssh
 ```
 
-
-
-## 修改镜像源
-
-```shell
-cp /etc/apt/sources.list /etc/apt/sources.list.bak
-
-# ubuntu
-sudo sed -i "s/cn.archive.ubuntu.com/mirrors.ustc.edu.cn/g" /etc/apt/sources.list
-sudo sed -i "s/cn.security.ubuntu.com/mirrors.ustc.edu.cn/g" /etc/apt/sources.list
-
-# debian
-sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
-sed -i 's|security.debian.org|mirrors.ustc.edu.cn|g' /etc/apt/sources.list
-
-```
-
 ## 安装依赖
 
 ```bash
@@ -54,7 +51,6 @@ apt-get install -y socat conntrack ebtables ipset ipvsadm ethtool apt-transport-
 timedatectl list-timezones
 
 timedatectl set-timezone Asia/Shanghai
-
 
 apt-get purge systemd-timesyncd -y
 
@@ -73,9 +69,7 @@ pool time.pool.aliyun.com  iburst maxsources 1
 pool cn.pool.ntp.org       iburst maxsources 2
 pool ntp.ubuntu.com        iburst maxsources 2
 
-
 systemctl restart chrony
-
 ```
 
 
@@ -127,13 +121,13 @@ sudo sysctl --system
 
 ## install k8s
 
-### use sealos
+### 使用 sealos 安装
 
 ```shell
 sealos --cluster fs-cloud add --nodes xxx.xxx.xxx.xxx,xxx.xxx.xxx.xxx 
 ```
 
-### manual 
+### 手动安装
 
 #### install containerd
 
