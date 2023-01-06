@@ -47,16 +47,6 @@ sed -i 's|security.debian.org|mirrors.ustc.edu.cn|g' /etc/apt/sources.list
 apt-get install -y socat conntrack ebtables ipset ipvsadm ethtool apt-transport-https ca-certificates
 ```
 
-**如果使用 debian 11 增加执行下面命令**
-
-```shell
-mkdir -p /run/systemd/resolve
-
-ln -s /etc/resolv.conf /run/systemd/resolve/resolv.conf
-```
-
-
-
 ## 修改时区和设置时间同步
 
 ```bash
