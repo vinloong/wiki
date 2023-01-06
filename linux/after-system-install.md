@@ -22,6 +22,7 @@ AuthorizedKeysFile      %h/.ssh/authorized_keys %h/.ssh/authorized_keys2 (公钥
 
 PermitRootLogin yes
 
+systemctl restart ssh
 ```
 
 
