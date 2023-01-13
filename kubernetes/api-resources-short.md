@@ -17,26 +17,14 @@
 | serviceaccounts            | sa         | v1                       | true  | ServiceAccount            |
 | services                   | svc        | v1                       | true  | Service                   |
 | customresourcedefinitions  | crd,crds   | apiextensions.k8s.io/v1  | false | CustomResourceDefinition  |
-| applications               | app        | app.k8s.io/v1beta1       | true  | Application               |
 | daemonsets                 | ds         | apps/v1                  | true  | DaemonSet                 |
 | deployments                | deploy     | apps/v1                  | true  | Deployment                |
 | replicasets                | rs         | apps/v1                  | true  | ReplicaSet                |
 | statefulsets               | sts        | apps/v1                  | true  | StatefulSet               |
 | horizontalpodautoscalers   | hpa        | autoscaling/v1           | true  | HorizontalPodAutoscaler   |
 | cronjobs                   | cj         | batch/v1                 | true  | CronJob                   |
-| certificaterequests        | cr,crs     | cert-manager.io/v1       | true  | CertificateRequest        |
-| certificates               | cert,certs | cert-manager.io/v1       | true  | Certificate               |
-| certificatesigningrequests | csr        | certificates.k8s.io/v1   | false | CertificateSigningRequest |
-| clusters                   | cl         | cluster.x-k8s.io/v1beta1 | true  | Cluster                   |
-| machinedeployments         | md         | cluster.x-k8s.io/v1beta1 | true  | MachineDeployment         |
-| machinehealthchecks        | mhc,mhcs   | cluster.x-k8s.io/v1beta1 | true  | MachineHealthCheck        |
-| machines                   | ma         | cluster.x-k8s.io/v1beta1 | true  | Machine                   |
-| machinesets                | ms         | cluster.x-k8s.io/v1beta1 | true  | MachineSet                |
-| events                     | ev         | events.k8s.io/v1         | true  | Event                     |
 | ingresses                  | ing        | networking.k8s.io/v1     | true  | Ingress                   |
 | networkpolicies            | netpol     | networking.k8s.io/v1     | true  | NetworkPolicy             |
-| poddisruptionbudgets       | pdb        | policy/v1                | true  | PodDisruptionBudget       |
-| podsecuritypolicies        | psp        | policy/v1beta1           | false | PodSecurityPolicy         |
 | priorityclasses            | pc         | scheduling.k8s.io/v1     | false | PriorityClass             |
 | storageclasses             | sc         | storage.k8s.io/v1        | false | StorageClass              |
 

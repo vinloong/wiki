@@ -1,4 +1,5 @@
 ---
+id: k8s-faq
 title: k8s 集群部分常见问题及处理
 date: 2020-08-20
 category: 
@@ -6,7 +7,6 @@ category:
 tag: [k8s]
 ---
 
-[TOC]
 
 
 
@@ -369,6 +369,13 @@ status:
 ```
 
 
+
+```
+NAMESPACE=<your-namespace>
+kubectl get namespace $NAMESPACE -o json > $NAMESPACE.json
+sed -i -e 's/"kubernetes"//' $NAMESPACE.json
+kubectl replace --raw "/api/v1/namespaces/$NAMESPACE/finalize" -f ./$NAMESPACE.json	
+```
 
 
 
