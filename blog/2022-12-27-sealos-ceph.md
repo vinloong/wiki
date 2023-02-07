@@ -1,5 +1,5 @@
 ---
-slug: sealos-ceph
+slug: sealos ceph
 title: sealos start && ceph clean
 authors: loong
 tags: [sealos, k8s, ceph]
