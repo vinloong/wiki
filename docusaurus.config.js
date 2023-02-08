@@ -69,6 +69,29 @@ const config = {
         disableInDev: true,
       }),
     ],
+    [
+      'content-docs',
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: 'kubernetes',
+        path: 'kubernetes',
+        routeBasePath: 'kubernetes',
+        sidebarPath: require.resolve('./sidebarsKubernetes.js'),
+        remarkPlugins: [npm2yarn],        
+        showLastUpdateTime: true,
+      })
+    ],
+    [
+      'content-docs',
+      ({
+        id:'linux',
+        path: 'linux',
+        routeBasePath: 'linux',
+        sidebarPath: 'sidebarsLinux.js',
+        showLastUpdateTime: true,
+        remarkPlugins: [math, [npm2yarn, {sync: true}]],        
+      })
+    ],
     '@docusaurus/theme-mermaid',    
   ],    
   presets: [
@@ -79,12 +102,12 @@ const config = {
         docs: {
           path: 'docs',
           sidebarPath: 'sidebars.js',
-          // sidebarPath: require.resolve('./sidebars.js'),
+          // sidebarPath: require.resolve('./sidebars.js'),          
           // Please change this to your repo. 
           showLastUpdateTime: true,
           remarkPlugins: [math, [npm2yarn, {sync: true}]],
           rehypePlugins: [],
-        },
+        },        
         blog: {
           path: 'blog',
           showReadingTime: true,
@@ -156,6 +179,20 @@ const config = {
             label: 'Tutorial',
 
           },
+          {
+            to: '/kubernetes',
+            label: 'kubernetes',
+            position: 'right',
+            sidebarId: 'kubernetes',
+            activeBaseRegex: `/kubernetes/`,
+          },
+          {
+            to: '/linux',
+            label: 'linux',
+            position: 'right',
+            sidebarId: 'linux',
+            activeBaseRegex: `/linux/`,
+          },          
           {to: '/blog', label: '博客', position: 'right'},
           {
             position: 'right',

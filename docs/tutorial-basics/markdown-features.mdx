@@ -2,6 +2,9 @@
 sidebar_position: 4
 ---
 
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import CodeBlock from '@theme/CodeBlock';
+
 # Markdown Features
 
 Docusaurus supports **[Markdown](https://daringfireball.net/projects/markdown/syntax)** and a few **additional features**.
@@ -147,9 +150,82 @@ This is <Highlight color="#1877F2">Facebook blue</Highlight> !
 
 
 
+```mdx-code-block
+<BrowserWindow>
+```
 
-```jsx title="/src/components/HelloCodeTitle.js"
+```jsx {2} showLineNumbers
 function HelloCodeTitle(props) {
-  return <h1>你好，{props.name}</h1>;
+  return <h1>你好，{props.name}</h1>; // [!code  --]
 }
+```
+
+```mdx-code-block
+</BrowserWindow>
+```
+
+
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+```mdx-code-block
+<BrowserWindow>
+```
+
+<Tabs>
+  <TabItem value="apple" label="苹果" default>
+    这是个苹果 🍎
+  </TabItem>
+  <TabItem value="orange" label="橙子">
+    这是个橙子 🍊
+  </TabItem>
+  <TabItem value="banana" label="香蕉">
+    这是个香蕉 🍌
+  </TabItem>
+</Tabs>
+
+```mdx-code-block
+</BrowserWindow>
+```
+
+
+
+```mdx-code-block
+<BrowserWindow>
+```
+
+:::note
+
+Some **content** with _Markdown_ `syntax`. 看看[这个 `api`](#)。
+
+:::  
+
+:::tip
+
+Some **content** with _Markdown_ `syntax`. 看看[这个 `api`](#)。
+
+:::  
+
+:::info
+
+Some **content** with _Markdown_ `syntax`. 看看[这个 `api`](#)。
+
+:::  
+
+:::caution
+
+Some **content** with _Markdown_ `syntax`. 看看[这个 `api`](#)。
+
+:::  
+
+:::danger
+
+Some **content** with _Markdown_ `syntax`. 看看[这个 `api`](#)。
+
+:::  
+
+```mdx-code-block
+</BrowserWindow>
 ```
