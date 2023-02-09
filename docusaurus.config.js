@@ -69,29 +69,18 @@ const config = {
         disableInDev: true,
       }),
     ],
-    [
-      'content-docs',
-      /** @type {import('@docusaurus/plugin-content-docs').Options} */
-      ({
-        id: 'kubernetes',
-        path: 'kubernetes',
-        routeBasePath: 'kubernetes',
-        sidebarPath: require.resolve('./sidebarsKubernetes.js'),
-        remarkPlugins: [npm2yarn],        
-        showLastUpdateTime: true,
-      })
-    ],
-    [
-      'content-docs',
-      ({
-        id:'linux',
-        path: 'linux',
-        routeBasePath: 'linux',
-        sidebarPath: 'sidebarsLinux.js',
-        showLastUpdateTime: true,
-        remarkPlugins: [math, [npm2yarn, {sync: true}]],        
-      })
-    ],
+    // [
+    //   'content-docs',
+    //   /** @type {import('@docusaurus/plugin-content-docs').Options} */
+    //   ({
+    //     id: 'kubernetes',
+    //     path: 'kubernetes',
+    //     routeBasePath: 'kubernetes',
+    //     sidebarPath: require.resolve('./sidebarsKubernetes.js'),
+    //     remarkPlugins: [npm2yarn],        
+    //     showLastUpdateTime: true,
+    //   })
+    // ],
     '@docusaurus/theme-mermaid',    
   ],    
   presets: [
@@ -173,26 +162,41 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
+            to: '/docs/category/docs',
             position: 'right',
-            label: 'Tutorial',
-
+            label: '文档',
           },
           {
-            to: '/kubernetes',
-            label: 'kubernetes',
-            position: 'right',
+            type: 'docSidebar',
             sidebarId: 'kubernetes',
-            activeBaseRegex: `/kubernetes/`,
+            position: 'right',
+            label: 'kubernetes',
           },
+          // {
+          //   to: '/kubernetes',
+          //   label: 'kubernetes',
+          //   position: 'right',
+          //   sidebarId: 'kubernetes',
+          //   activeBaseRegex: `/kubernetes/`,
+          // },
           {
-            to: '/linux',
+            type: 'docSidebar',
             label: 'linux',
             position: 'right',
             sidebarId: 'linux',
-            activeBaseRegex: `/linux/`,
-          },          
+          },     
+          {
+            type: 'docSidebar',
+            label: 'dev&ops',
+            position: 'right',
+            sidebarId: 'dev&ops',
+          },    
+          {
+            type: 'docSidebar',
+            label: 'others',
+            position: 'right',
+            sidebarId: 'others',
+          },              
           {to: '/blog', label: '博客', position: 'right'},
           {
             position: 'right',

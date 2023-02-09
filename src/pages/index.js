@@ -80,7 +80,7 @@ function HomeBackground() {
           <div className={styles.buttons}>
             <Link
               className="button button--secondary button--lg"
-              to="/docs/intro">
+              to="/docs/category/docs">
               Start Loong's Wiki ...
             </Link>
           </div>
