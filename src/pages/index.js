@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import Background from '../../static/img/8b0a1b.jpg'
+import Background from '../../static/img/8b0a1b.png'
 
 import styles from './index.module.css';
 
@@ -87,7 +87,8 @@ function HomeBackground() {
         </div>
       </div>
       <div className={styles.rightContainer}>
-        <img src={Background} alt='Background' />
+        {/* <img src={Background} alt='Background' /> */}
+        <img src='https://raw.githubusercontent.com/vinloong/imgchr/main/notes/2023/01/23/8b0a1b.jpg' alt='Background' />
       </div>
     </div>
   )

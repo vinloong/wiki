@@ -8,7 +8,7 @@ tag: [k8s]
 前面步骤与 之前 k8s  搭建无差别。
 只是这次是容器运行时是使用的 **CRI-O**
 
-默认已经[安装容器运行时](./cri-o-start.md)
+默认已经[安装容器运行时](./containers/cri-o-start.md)
 
 
 ```shell

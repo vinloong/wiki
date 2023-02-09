@@ -13,7 +13,7 @@ const BookMarksDropdownItems = Object.entries(BookMarks)
 const config = {
   title: "Loong's Wiki",
   tagline: '',
-  url: 'https://github.com',
+  url: 'https://vinloong.github.io',
   baseUrl: '/',
   baseUrlIssueBanner: true,
   onBrokenLinks: 'throw',
@@ -21,7 +21,8 @@ const config = {
   favicon: 'img/favicon.ico',
   
   organizationName: 'vinloong', 
-  projectName: 'wiki', 
+  projectName: 'vinloong.github.io', 
+  trailingSlash: false,
   stylesheets: [
     {
       href: '/katex/katex.min.css',
@@ -229,20 +230,12 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: '文档',
+                to: '/docs/category/docs',
               },
             ],
           },
-          {
-            title: 'Community',
-            items: [ 
-              {
-                label: 'GitHub',
-                href: 'https://github.com/vinloong/wiki',
-              },
-             ],
-          },
+
           {
             title: 'More',
             items: [

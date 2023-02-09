@@ -253,7 +253,7 @@ A job is the highest level component in Databuilder, and it orchestrates a task 
 
 Job是Databuilder中层级最高的组件，包括task或publisher。
 
-#### [Model](docs/models.md)
+#### Model
 
 Models are abstractions representing the domain.
 

@@ -56,7 +56,7 @@ wsl --set-version Ubuntu-18.04 2
 
 # 使用
 
-## [简单配置优化](../linux/ubuntu-tips.md)
+## [简单配置优化](../../linux/ubuntu-tips.md)
 
 ### 使用xshell 连接
 
@@ -76,7 +76,7 @@ ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key
 ssh-keygen -t dsa -f /etc/ssh/ssh_host_dsa_key
 ```
 
-## [安装 docker](docker_install.md)
+## [安装 docker](../containers/docker_install.md)
 
 
 ### 补充

@@ -19,19 +19,19 @@ tag: []
 
 ## kube edge 
 
- <img src="https://raw.githubusercontent.com/vinloong/imgchr/main/notes/img/202201191026580.png" style="zoom:80%;" />
+ <img src="https://raw.githubusercontent.com/vinloong/imgchr/main/notes/img/202201191026580.png" />
 
 
 
 ## Baetyl
 
- <img src="https://raw.githubusercontent.com/vinloong/imgchr/main/notes/img/202201191027896.png" style="zoom:80%;" />
+ <img src="https://raw.githubusercontent.com/vinloong/imgchr/main/notes/img/202201191027896.png" />
 
 
 
 ## SuperEdge
 
- <img src="https://raw.githubusercontent.com/vinloong/imgchr/main/notes/img/202201191027539.png" style="zoom:80%;" />
+ <img src="https://raw.githubusercontent.com/vinloong/imgchr/main/notes/img/202201191027539.png" />
 
 
 
@@ -39,4 +39,4 @@ tag: []
 
 
 
- <img src="https://raw.githubusercontent.com/vinloong/imgchr/main/notes/img/202201191028449.png" style="zoom: 67%;" />
+ <img src="https://raw.githubusercontent.com/vinloong/imgchr/main/notes/img/202201191028449.png" />

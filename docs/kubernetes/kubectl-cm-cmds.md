@@ -379,7 +379,7 @@ kubectl taint nodes foo dedicated=special-user:NoSchedule
 ### 资源类型
 
 
-列出所支持的全部资源类型和它们的简称、[API 组](/zh/docs/concepts/overview/kubernetes-api/#api-groups-and-versioning), 是否是[名字空间作用域](/zh/docs/concepts/overview/working-with-objects/namespaces) 和 [Kind](/zh/docs/concepts/overview/working-with-objects/kubernetes-objects)。
+列出所支持的全部资源类型和它们的简称、[API 组](https://kubernetes.io/zh-cn/docs/concepts/overview/kubernetes-api/#api-groups-and-versioning), 是否是[名字空间作用域](https://kubernetes.io/zh-cn/docs/concepts/overview/working-with-objects/namespaces/) 和 [Kind](https://kubernetes.io/zh-cn/docs/concepts/overview/working-with-objects/kubernetes-objects/)。
 
 ```bash
 kubectl api-resources
@@ -410,8 +410,8 @@ kubectl api-resources --api-group=extensions # "extensions" API 组中的所有�
 `-o=custom-columns=<spec>` | 使用逗号分隔的自定义列来打印表格
 `-o=custom-columns-file=<filename>` | 使用 `<filename>` 文件中的自定义列模板打印表格
 `-o=json`     | 输出 JSON 格式的 API 对象
-`-o=jsonpath=<template>` | 打印 [jsonpath](/zh/docs/reference/kubectl/jsonpath) 表达式中定义的字段
-`-o=jsonpath-file=<filename>` | 打印在 `<filename>` 文件中定义的 [jsonpath](/zh/docs/reference/kubectl/jsonpath) 表达式所指定的字段。
+`-o=jsonpath=<template>` | 打印 [jsonpath](https://kubernetes.io/zh-cn/docs/reference/kubectl/jsonpath/) 表达式中定义的字段
+`-o=jsonpath-file=<filename>` | 打印在 `<filename>` 文件中定义的 [jsonpath](https://kubernetes.io/zh-cn/docs/reference/kubectl/jsonpath/) 表达式所指定的字段。
 `-o=name`     | 仅打印资源名称而不打印其他内容
 `-o=wide`     | 以纯文本格式输出额外信息，对于 Pod 来说，输出中包含了节点名称
 `-o=yaml`     | 输出 YAML 格式的 API 对象
@@ -433,7 +433,7 @@ kubectl get pods -A -o=custom-columns='DATA:spec.containers[?(@.image!="k8s.gcr.
 kubectl get pods -A -o=custom-columns='DATA:metadata.*'
 ```
 
-有关更多示例，请参看 kubectl [参考文档](/zh/docs/reference/kubectl/overview/#custom-columns)。
+有关更多示例，请参看 kubectl [参考文档](https://kubernetes.io/zh-cn/docs/reference/kubectl/#custom-columns)。
 
 
 

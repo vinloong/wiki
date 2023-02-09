@@ -1,35 +1,41 @@
 name:  GitHub Pages
 on:
   push:
-    branches: 
-    - main
+    branches: [main]
   pull_request:
+    branches: [main]
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          submodules: true
-          fetch-depth: 0    
-
-      - name: Setup Node
-        uses: actions/setup-node@v2
+          node-version: 18
+          cache: npm    
+      - name: Install dependencies
+        run: npm ci
+      - name: build website
+        run: npm run build
+  deploy:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: '16'
-
-      - name: setup website
-        run: git clone https://github.com/vinloong/vuepress-theme-hope-custom.git website
-      
-      - name: note setup
-        run: mv algorithms/ kubernetes/ 'dev&ops'/ others/ linux/ -t website/docs/
-      
-      - name: build
-        run: cd website && npm install && npm run docs:build
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        
+          node-version: 18
+          cache: npm
+      - uses: webfactory/ssh-agent@v0.5.0
         with:
-          github_token: ${{ secrets.NOTES_DEPLOY_SECRET }}         
-          publish_dir: ./website/docs/.vuepress/dist
+          ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}   
+      - name: Deploy to GitHub Pages
+        env:
+          USE_SSH: true
+        run: |
+          git config --global user.email "21272660+vinloong@users.noreply.github.com"
+          git config --global user.name "vinloong"
+          yarn install --frozen-lockfile
+          yarn deploy                 
+
