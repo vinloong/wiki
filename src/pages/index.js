@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import Background from '../../static/img/8b0a1b.png'
+import { Analytics } from '@vercel/analytics/react';
 
 import styles from './index.module.css';
 
@@ -103,6 +103,7 @@ export default function Home() {
       {/* <HomepageHeader /> */}
       <main>
         <HomeBackground />
+        <Analytics />
         {/* <HomepageFeatures /> */}
       </main>
     </Layout>

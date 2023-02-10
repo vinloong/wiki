@@ -25,7 +25,7 @@
     "netlify:crowdin:downloadTranslations": "yarn netlify:crowdin:wait && yarn --cwd .. crowdin:download:website",
     "netlify:crowdin:downloadTranslationsFailSafe": "yarn netlify:crowdin:wait && (yarn --cwd .. crowdin:download:website || echo 'Crowdin translation download failure (only internal PRs have access to the Crowdin env token)')",
     "netlify:crowdin:uploadSources": "yarn --cwd .. crowdin:upload:website",
-    "typecheck": "tsc"    
+    "typecheck": "tsc"
   },
   "dependencies": {
     "@crowdin/cli": "^3.7.9",
@@ -45,6 +45,7 @@
     "@docusaurus/utils-common": "2.3.1",
     "@popperjs/core": "^2.11.5",
     "@swc/core": "1.2.197",
+    "@vercel/analytics": "^0.1.8",
     "clsx": "^1.2.1",
     "color": "^4.2.3",
     "fs-extra": "^10.1.0",
@@ -68,7 +69,7 @@
     "@tsconfig/docusaurus": "^1.0.5",
     "@types/jest": "^28.1.4",
     "cross-env": "^7.0.3",
-    "rimraf": "^3.0.2" 
+    "rimraf": "^3.0.2"
   },
   "browserslist": {
     "production": [
