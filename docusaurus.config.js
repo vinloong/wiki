@@ -211,11 +211,11 @@ const config = {
         ],
       },
       image: 'img/docusaurus-social-card.jpg',
-      algolia: {
-        appId: '',
-        apiKey: '',
-        indexName: '',
-      },      
+      // algolia: {
+      //   appId: '',
+      //   apiKey: '',
+      //   indexName: '',
+      // },      
       navbar: {
         hideOnScroll: true,
         title: "Loong's Wiki",
