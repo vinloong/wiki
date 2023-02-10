@@ -152,6 +152,11 @@ const config = {
         ],
       },
       image: 'img/docusaurus-social-card.jpg',
+      algolia: {
+        appId: 'GCGZVC6V2M',
+        apiKey: '875b563d62bfaec1e44be6cd97355d63',
+        indexName: 'loong-wiki',
+      },      
       navbar: {
         hideOnScroll: true,
         title: "Loong's Wiki",
