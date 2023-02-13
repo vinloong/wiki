@@ -1,6 +1,7 @@
 # Generated files
 .docusaurus
 .cache-loader
+.obsidian
 
 # Misc
 .DS_Store
