@@ -1,7 +1,9 @@
 ---
 title: Linux-FAQ
 date: 2022-04-18
-keywords: [linux, route, ]
+sidebar_position: 1
+tags: [linux, faq]
+keywords: [linux, route, fuser, lvextend]
 ---
 
 import BrowserWindow from '@site/src/components/BrowserWindow';
@@ -45,7 +47,9 @@ sudo rm /var/lib/dpkg/info/redis-server.*
 
 ## linux 根目录空间不足，追加空间到根目录下
 
-### k8s pod 异常，无法启动
+### 问题分析
+
+ k8s pod 异常，无法启动
 
 ```mdx-code-block
 <BrowserWindow>
@@ -120,16 +124,17 @@ tmpfs                        6.3G     0  6.3G   0% /run/user/0
 </BrowserWindow>
 ```
 
-可以看到，磁盘空间都在 `/home` 目录下，根目录下 空间太小，所以我们把 `/home` 路径下空间 分给 根目录一些
+可以看到，根目录下空间确实不足， `/home` 下空间超大，所以我们把 `/home` 下部分空间 分给 根目录
 
-思路：
+### 解决思路
+
 1. 备份 `/home`
 2. 删除 `/home`
 3. 扩展 `/root`
 4. 新建 `/home`
 5. 恢复 `/home`
 
-### 操作过程如下
+### 详细操作过程如下
 
 ```mdx-code-block
 <BrowserWindow>
@@ -260,3 +265,18 @@ root@node-05:~# rm home.tar
 ```mdx-code-block
 </BrowserWindow>
 ```
+
+## ubuntu read-only file system
+
+```mdx-code-block
+<BrowserWindow>
+```
+
+```shell
+fsck -f /dev/sda2
+```
+
+```mdx-code-block
+</BrowserWindow>
+```
+
