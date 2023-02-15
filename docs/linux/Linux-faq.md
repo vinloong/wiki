@@ -14,7 +14,7 @@ import BrowserWindow from '@site/src/components/BrowserWindow';
 <BrowserWindow>
 ```
 
-```shell
+```shell showLineNumbers
 # 1. 查看网关
 route -n
 
@@ -140,7 +140,7 @@ tmpfs                        6.3G     0  6.3G   0% /run/user/0
 <BrowserWindow>
 ```
 
-```bash
+```bash {1,3,10,29-32,35,40,45,52,55,70,73} showLineNumbers
 root@node-05:~# tar cvf home.tar /home
 
 root@node-05:~# apt-get update
