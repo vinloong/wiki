@@ -222,6 +222,16 @@ root@node-05:~# tar xvf home.tar -C /
 </BrowserWindow>
 ```
 
+:::tip  
+如果报错如下：  
+lvextend command not found 
+用下面命令安装下 `lvm2`
+```bash
+apt-get install lvm2
+```  
+:::
+
+
 现在查看目录大小
 
 ```mdx-code-block

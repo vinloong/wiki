@@ -2,9 +2,9 @@
 id: k8s-faq
 title: k8s 集群部分常见问题及处理
 date: 2020-08-20
-category: 
-    - kubernetes
-tag: [k8s]
+sidebar_position: 1
+tags: [k8s, kubernetes, ]
+keywords: [kubectl, journalctl, kubelet, pod, kubeadm ]
 ---
 
 
