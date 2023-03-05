@@ -46,6 +46,7 @@ keywords: [kubernetes, k8s, cka, rbac]
 > 限于 namespace `app-team1` 中，将新的 ClusterRole `deployment-clusterrole` 绑定到新的 ServiceAccount `cicd-token`.
 
 
+### 解答：
 
 ```shell
 kubectl create clusterrole deployment-clusterrole --verb=create --resource=deployment,daemonset,statefulset
