@@ -1,3 +1,11 @@
+---
+title: CKA 练习
+date: 2023-03-05
+sidebar_position: 1
+tags: [kubernetes, k8s, cka ]
+keywords: [kubernetes, k8s, cka, rbac]
+---
+
 
 ## 1. 基于角色的访问控制-RBAC
 
