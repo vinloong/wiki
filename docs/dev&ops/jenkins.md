@@ -45,7 +45,7 @@ type: Opaque
 
 ```pipeline
 podTemplate {
-    # 使用哪个 pod 模板
+    # 使用哪个 pod 模板 label
     node('pod-templ-jenkins-slave-common') {
         stage('Run shell') { 
               # 下载代码
@@ -62,12 +62,26 @@ podTemplate {
                     # --dockerfile: Dockerfile 的路径
                     # --destination: 推送的 image 
                     # 构建完成后会自动推送
-                    /kaniko/executor --dockerfile=dev/12/Dockerfile --destination=registry.ngaiot.com/devops/node:12-fs-test
+                    /kaniko/executor --dockerfile=dev/12/Dockerfile --destination=registry.ngaiot.com/${DEVOPS}/node:12-fs-${IMAGE_VERSION}
                   '''
               }
         }
     }
 }
 
+
+```
+
+## 环境变量
+
+```
+DEVOPS
+FS-CLOUD
+IMAGE_VERSION
+IOT
+ZHIWUCLOUD
+
+...
+...
 
 ```
