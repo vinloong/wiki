@@ -66,9 +66,20 @@ kubectl create rolebinding deployment-clusterrole-cicd-token-binding -n app-team
 
 ### 题目
 
+> :::caution
+> 
+> Set configuration contest:
+> 
+> ```shell
+> [student@node-1]$ kubectl config use-context ek8s
+> ```
+> 
+> :::
+> 
 > set the node named `ek8s-node-1` as unavailable and reshedule all the pods running on it
 >
 > - 设置配置环境 kubectl config use-context ek8s 
+> - 
 > - 将名为 `ek8s-node-1` 的 node 设置为不可调度，并重新调度该 node 上所有运行的 pods
 
 ### 解答
@@ -167,6 +178,12 @@ kubectl drain ek8s-node-1 --delete-emptydir-data --ignore-daemonsets --force
 
 ### 题目
 
+> :::info
+> 
+> No configuration context change required for this item.
+> 
+> :::
+> 
 > First, create a snapshot of the existing etcd instance running at https://127.0.0.1:2379, saving the snapshot to `/srv/data/etcd-snapshot.db`
 > 
 > :::info  
@@ -190,8 +207,12 @@ kubectl drain ek8s-node-1 --delete-emptydir-data --ignore-daemonsets --force
 > :::
 
 
+> 本题不需要切换环境
+> 
 > 为 运 行 在​ ​`https://127.0.0.1:2379`​​ 上 的 现 有 etcd 实 例 创 建 快 照 并 将 快 照 保 存 到 `/srv/data/etcd-snapshot.db`
+> 
 > 为给定实例创建快照预计能在几秒钟内完成。如果该操作似乎挂起，则命令可能有问题。用 `ctrl+c` 来取消操作，然后重试。
+> 
 > 然后还原位于`/srv/data/etcd-snapshot-previous.db` 的现有先前快照.
 
 ### 解答
