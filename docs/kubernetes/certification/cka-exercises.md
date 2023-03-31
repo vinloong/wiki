@@ -91,10 +91,15 @@ kubectl drain ek8s-node-1 --delete-emptydir-data --ignore-daemonsets --force
 ### 题目
 
 > 现有的 kubernetes 集群正在运行版本 1.23.1 ,仅将 master 节点上的所有 kubernetes 控制平面和节点组件升级到版本 1.23.2 
+> 
 > 确保在升级前 `drain master` 节点，并在升级后 `uncordon master` 节点。
+> 
 > 可以使用以下命令，通过 ssh 连接到 master 节点: `ssh master01`
+> 
 > 可以使用以下命令,  在 该 master 节点上获取更高权限: `sudo -i`
+> 
 > 另外，在主节点上升级 `kubelet` 和 `kubectl`
+> 
 > 请不要升级工作节点,  `etcd` 、`container` 管理器，CNI 插件，DNS 服务或任何其他插件 
 
 ### 解答
@@ -161,6 +166,29 @@ kubectl drain ek8s-node-1 --delete-emptydir-data --ignore-daemonsets --force
 [恢复 etcd 集群](https://kubernetes.io/zh-cn/docs/tasks/administer-cluster/configure-upgrade-etcd/#restoring-an-etcd-cluster)
 
 ### 题目
+
+> First, create a snapshot of the existing etcd instance running at https://127.0.0.1:2379, saving the snapshot to `/srv/data/etcd-snapshot.db`
+> 
+> :::info  
+> 
+> Creating a snapshot of the given instance is expected to complete in seconds.
+> 
+> If the operation seems to hang,something's likely wrong with your command. Use `CTRL+C` to cancel the operation and try again.
+> 
+> :::
+> 
+> Next, restore an existing, previous snapshot located at `/var/lib/backup/etcd-snapshot-previous.db`.
+> 
+> :::info
+> 
+> The following TLS certificates/key are supplied for connecting to the server with etcdctl:
+> 
+> - CA certificate: /opt/KUIN00601/ca.crt
+> - Client certificate: /opt/KUIN00601/etcd-client.crt
+> - Client key: /opt/KUIN00601/etcd-client.key
+>
+> :::
+
 
 > 为 运 行 在​ ​`https://127.0.0.1:2379`​​ 上 的 现 有 etcd 实 例 创 建 快 照 并 将 快 照 保 存 到 `/srv/data/etcd-snapshot.db`
 > 为给定实例创建快照预计能在几秒钟内完成。如果该操作似乎挂起，则命令可能有问题。用 `ctrl+c` 来取消操作，然后重试。
