@@ -6,6 +6,8 @@ tags: [linux, printing]
 keywords: [linux, printing]
 ---
 
+import BrowserWindow from '@site/src/components/BrowserWindow';
+
 ## banner
 
 ```mdx-code-block

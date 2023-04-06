@@ -6,6 +6,8 @@ tags: [ elasticsearch ]
 keywords: [ elasticsearch ]
 ---
 
+import BrowserWindow from '@site/src/components/BrowserWindow';
+
 ## 配置优化
 
 ### 系统配置
