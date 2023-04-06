@@ -85,3 +85,9 @@ ZHIWUCLOUD
 ...
 
 ```
+
+
+### 附
+
+[NPM 仓库 ](https://nexus.ngaiot.com/repository/fs-npm/)
+[Maven 仓库](https://nexus.ngaiot.com/repository/maven-public/)
