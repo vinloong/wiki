@@ -15,13 +15,18 @@ import BrowserWindow from '@site/src/components/BrowserWindow';
 1. ES使用root用户启动，之后不能再启动的原因之ERROR Unable to locate appender “rolling“ for logger config “root“
     > es 默认不能使用 `root` 用户启动。当你使用 `root` 用户启动时 es 初始化相关目录。而这些目录是由 `root` 用户创建，elasticsearch 用户没有权限访问或修改。
 
+```mdx-code-block
+<BrowserWindow>
+```
 ```shell
 chown -R elasticsearch /var/log/elasticsearch
 # uuju 
 chgrp -R elasticsearch /var/lib/elasticsearch
   
 ```
-
+```mdx-code-block
+</BrowserWindow>
+```
 
 > 使用 .zip 或 .tar.gz 软件包安装时，可以通过以下方式配置系统设置：  
 > - 通过 ulimit 命令进行临时配置
@@ -135,7 +140,9 @@ vm.max_map_count=262144
 
 
 
-
+```mdx-code-block
+<BrowserWindow>
+```
 ```bash
 ulimit -a
 
@@ -163,7 +170,9 @@ vi elasticsearch.yml
 bootstrap.memory_lock: true
 cluster.routing.allocation.same_shard.host: true
 ```
-
+```mdx-code-block
+</BrowserWindow>
+```
 
 
 ### es 配置
@@ -198,6 +207,9 @@ thread_pool:
 
 ### 导出数据
 
+```mdx-code-block
+<BrowserWindow>
+```
 ```shell
 export ES_INDEX=anxinyun_raws; 
 
@@ -209,13 +221,25 @@ elasticdump --input=http://10.8.40.11:9200/${ES_INDEX} \
 
 echo "${ES_INDEX}-2019:  END  time ================= [ `date` ] " >> time.txt; 
 ```
+```mdx-code-block
+<BrowserWindow>
+```
 
+```mdx-code-block
+<BrowserWindow>
+```
 ```bash
 nohup bin/export-2019.sh > logs/export-2019.log 2>&1 &
+```
+```mdx-code-block
+<BrowserWindow>
 ```
 
 ### 导入数据
 
+```mdx-code-block
+<BrowserWindow>
+```
 ```shell
 export ES_INPUT_INDEX=anxinyun_raws;
 export DATA_YEAR=2019;
@@ -230,7 +254,16 @@ elasticdump --input="/tmp/${ES_INPUT_INDEX}-${DATA_YEAR}.json" \
 
 echo "IMPORT ${ES_INPUT_INDEX}-${DATA_YEAR} TO ${ES_OUTPUT_INDEX}-${DATA_YEAR} :  END  time ================= [ `date` ] " >> logs/time.txt;
 ```
+```mdx-code-block
+</BrowserWindow>
+```
 
+```mdx-code-block
+<BrowserWindow>
+```
 ```bash
 nohup bin/import-2019.sh > logs/import-2019.log 2>&1 &
+```
+```mdx-code-block
+</BrowserWindow>
 ```
