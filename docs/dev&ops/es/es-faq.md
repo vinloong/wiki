@@ -211,15 +211,33 @@ thread_pool:
 <BrowserWindow>
 ```
 ```shell
-export ES_INDEX=anxinyun_raws; 
+#!/bin/sh
 
-echo "${ES_INDEX}-2019: START time ================= [ `date` ] " >> time.txt; 
+ES_INDEX=xxxxxx
+
+START_YEAR=2019
+
+END_YEAR=$((${START_YEAR}+1))
+
+START_TIME="${START_YEAR}-01-01T00:00:00.000+08"
+
+END_TIME="${END_YEAR}-01-01T12:00:00.000+08"
+
+LIMIT_SIZE=3000
+
+echo "${ES_INDEX}           ${START_TIME}          ${END_TIME}"
+
+search_body='{"query": { "bool": { "must": [{ "range": { "collect_time": { "gte": "'${START_TIME}'", "lt": "'${END_TIME}'" } } }] } }, "sort": [{ "collect_time": { "order": "asc" } }] }'
+
+echo ${search_body}
+
+echo "EXPORT ${ES_INDEX}-${START_YEAR}: START time ================= [ `date` ] " >> logs/time.txt; 
 
 elasticdump --input=http://10.8.40.11:9200/${ES_INDEX} \
-  --searchBody='{"query": { "bool": { "must": [{ "range": { "collect_time": { "gte": "2019-01-01T00:00:00.000+08", "lt": "2020-01-01T00:00:00.000+08" } } }] } }, "sort": [{ "collect_time": { "order": "asc" } }] }' \
-  --limit=2000 --output=/tmp/${ES_INDEX}-2019.json --type=data ; 
+  --searchBody='{"query": { "bool": { "must": [{ "range": { "collect_time": { "gte": "'${START_TIME}'", "lt": "'${END_TIME}'" } } }] } }, "sort": [{ "collect_time": { "order": "asc" } }] }' \
+  --limit=${LIMIT_SIZE} --output=/tmp/${ES_INDEX}-${START_YEAR}.json --type=data ; 
 
-echo "${ES_INDEX}-2019:  END  time ================= [ `date` ] " >> time.txt; 
+echo "EXPORT ${ES_INDEX}-${START_YEAR}:  END  time ================= [ `date` ] " >> logs/time.txt; 
 ```
 ```mdx-code-block
 </BrowserWindow>
