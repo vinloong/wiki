@@ -3,6 +3,7 @@ index: false
 icon: devops
 title: es 数据恢复操作步骤
 date: 2022-04-01
+sidebar_position: 1
 category:
   - dev&ops
 tag:
