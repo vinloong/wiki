@@ -128,12 +128,6 @@ $ vi /etc/sysctl.conf
 vm.swappiness=1
 vm.max_map_count=262144
 
-
-# 启用 `bootstrap.memory_lock`
-# 在 es 配置文件中 `elasticsearch.yml` 增加一行
-$ vi elasticsearch.yml
-bootstrap.memory_lock: true
-
 ```
 ```mdx-code-block
 </BrowserWindow>
@@ -174,6 +168,31 @@ cluster.routing.allocation.same_shard.host: true
 
 ### es 配置
 
+```mdx-code-block
+<BrowserWindow>
+```
+```shell
+# 启用 `bootstrap.memory_lock`  
+# 在 es 配置文件中 `elasticsearch.yml` 增加一行  
+$ vi elasticsearch.yml 
+bootstrap.memory_lock: true
+
+#
+#
+# thread_pool 
+#
+thread_pool:
+  write:
+    size: 100
+    queue_size: 1000
+  search:
+    size: 50
+    queue_size: 1000
+
+```
+```mdx-code-block
+<BrowserWindow>
+```
 
 ## 索引优化
 
