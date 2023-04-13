@@ -200,7 +200,7 @@ thread_pool:
 
 ```
 ```mdx-code-block
-<BrowserWindow>
+</BrowserWindow>
 ```
 
 ## 索引优化
@@ -222,7 +222,7 @@ elasticdump --input=http://10.8.40.11:9200/${ES_INDEX} \
 echo "${ES_INDEX}-2019:  END  time ================= [ `date` ] " >> time.txt; 
 ```
 ```mdx-code-block
-<BrowserWindow>
+</BrowserWindow>
 ```
 
 ```mdx-code-block
@@ -232,7 +232,7 @@ echo "${ES_INDEX}-2019:  END  time ================= [ `date` ] " >> time.txt;
 nohup bin/export-2019.sh > logs/export-2019.log 2>&1 &
 ```
 ```mdx-code-block
-<BrowserWindow>
+</BrowserWindow>
 ```
 
 ### 导入数据

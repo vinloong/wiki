@@ -130,7 +130,7 @@ tmpfs                        6.3G     0  6.3G   0% /run/user/0
 
 1. 备份 `/home`
 2. 删除 `/home`
-3. 扩展 `/root`
+3. 扩展 `/`
 4. 新建 `/home`
 5. 恢复 `/home`
 
