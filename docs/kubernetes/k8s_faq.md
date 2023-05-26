@@ -338,8 +338,6 @@ status:
 
 #### 4. 调接口删除
 
-
-
 ```shell
 
 ➜  ~ kubectl get ns kubesphere-logging-system -o json > logging-system.json
@@ -376,6 +374,29 @@ kubectl get namespace $NAMESPACE -o json > $NAMESPACE.json
 sed -i -e 's/"kubernetes"//' $NAMESPACE.json
 kubectl replace --raw "/api/v1/namespaces/$NAMESPACE/finalize" -f ./$NAMESPACE.json	
 ```
+
+#### 5. 使用 `kubectl replace` 删除
+
+> 如果你尝试删除 Kubernetes（k8s）中的 namespace，但它一直处于 Terminating 状态，有可能是因为某些资源无法被自动清理。要解决这个问题，你可以尝试以下步骤：
+
+```bash
+# 1. 查看输出中的 `spec.finalizers` 字段，它可能包含 `kubernetes` 这个值。
+kubectl get namespace <your-namespace> -o json
+
+# 2. 使用下面的命令创建一个名为 `ns.json` 的文件，其中包含你在上一步中获取的 namespace 信息：   
+kubectl get namespace <your-namespace> -o json > ns.json   
+# **注意**：将 `<your-namespace>` 替换为你要删除的实际 namespace 的名称。
+
+# 3. 使用文本编辑器打开 `ns.json` 文件，找到 `spec.finalizers` 字段，将其值从 `["kubernetes"]` 更改为 `[]`，即清空该字段的值。保存并关闭文件。
+# 4. 使用以下命令代替原来的 namespace 配置：
+kubectl replace --raw "/api/v1/namespaces/<your-namespace>/finalize" -f ns.json   
+# **注意**：将 `<your-namespace>` 替换为你要删除的实际 namespace 的名称。
+```
+
+  
+
+
+> 这会强制删除 namespace，即使其中仍有一些资源未被清理。在完成删除后，务必检查与该 namespace 相关的其他资源，确保已正确清理所有相关资源，以避免未来的问题。
 
 
 
