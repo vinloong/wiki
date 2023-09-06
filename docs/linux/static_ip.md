@@ -55,7 +55,8 @@ network:
       - 10.8.40.125/24
       routes:
         - to: default
-          via: 10.8.40.1        
+          via: 10.8.40.1
+          metric: 100      
       nameservers:
         addresses:
         - 114.114.114.114
