@@ -13,7 +13,7 @@ const BookMarksDropdownItems = Object.entries(BookMarks)
 const config = {
   title: "Loong's Wiki",
   tagline: '',
-  url: 'https://vinloong.github.io',
+  url: 'https://www.lingwenlong.com',
   baseUrl: '/',
   baseUrlIssueBanner: true,
   onBrokenLinks: 'throw',
