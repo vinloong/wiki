@@ -213,7 +213,7 @@ const config = {
       image: 'img/docusaurus-social-card.jpg',
       algolia: {
         appId: 'M0SW1X5KLW',
-        apiKey: '90d3f491aaef78b5f20eb4efa2709b86',
+        apiKey: 'ce6d0ea73c8ad1406aaf6da247a2c6de',
         indexName: 'lingwenlong',
         debug: false
       },      
