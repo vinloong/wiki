@@ -5,7 +5,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
- :root {
+@import url('react-medium-image-zoom/dist/styles.css');
+
+:root {
   /*
   See css var + hsl color palette technique:
   https://blog.maximeheckel.com/posts/the-power-of-composition-with-css-variables/
@@ -17,7 +19,7 @@
   --site-color-tooltip-background: #353738;
   --site-color-svg-icon-favorite: #e9669e;
   --site-color-checkbox-checked-bg: hsl(167deg 56% 73% / 25%);
-  --site-color-feedback-background: #fff;
+  --site-color-feedback-background: #f0f8ff;
   --docusaurus-highlighted-code-line-bg: rgb(0 0 0 / 10%);
   /* Use a darker color to ensure contrast, ideally we don't need important */
   --ifm-breadcrumb-color-active: var(--ifm-color-primary-darker) !important;
@@ -25,7 +27,7 @@
 }
 
 html[data-theme='dark'] {
-  --site-color-feedback-background: #f0f8ff;
+  --site-color-feedback-background: #2a2929;
   --site-color-favorite-background: #1d1e1e;
   --site-color-checkbox-checked-bg: hsl(167deg 56% 73% / 10%);
   --docusaurus-highlighted-code-line-bg: rgb(66 66 66 / 35%);
@@ -219,4 +221,20 @@ div[class^='announcementBar_'] {
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
   border-left: 3px solid #ff000080;
+}
+
+[data-rmiz-modal-overlay='visible'] {
+  background-color: rgba(255 255 255 / 95%);
+}
+
+[data-theme='dark'] [data-rmiz-modal-overlay='visible'] {
+  background-color: rgba(0 0 0 / 95%);
+}
+
+html[data-navbar='false'] .navbar {
+  display: none;
+}
+
+html[data-red-border] div#__docusaurus {
+  border: red solid thick;
 }

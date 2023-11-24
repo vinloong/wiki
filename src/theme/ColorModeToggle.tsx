@@ -17,7 +17,7 @@ import {
   LIGHT_BACKGROUND_COLOR,
   DARK_BACKGROUND_COLOR,
   COLOR_SHADES,
-} from '../utils/colorUtils';
+} from '@site/src/utils/colorUtils';
 import type {Props} from '@theme/ColorModeToggle';
 
 // The ColorGenerator modifies the DOM styles. The styles are persisted in
