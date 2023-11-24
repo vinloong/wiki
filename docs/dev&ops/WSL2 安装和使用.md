@@ -93,7 +93,7 @@ ssh-keygen -t dsa -f /etc/ssh/ssh_host_dsa_key
 ```
 
 
-## [安装 docker](../kubernetes/containers/docker_install.md)
+## [安装 docker](../k8s/containers/docker_install.md)
 
 
 ### 补充
