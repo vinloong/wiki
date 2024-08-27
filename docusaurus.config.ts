@@ -22,7 +22,7 @@ const baseUrl = '/';
 
 const defaultLocale = 'zh-CN';
 
-const beian = '冀ICP备20015127号-1'
+const beian = '冀ICP备2024078621号-1'
 
 export default async function createConfigAsync() {
   return {
