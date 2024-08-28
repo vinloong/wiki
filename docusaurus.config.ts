@@ -32,7 +32,7 @@ export default async function createConfigAsync() {
     projectName: 'wiki',
     baseUrl,
     baseUrlIssueBanner: true,
-    url: 'https://wenlong.xyz',
+    url: 'https://note.wenlong.xyz',
     stylesheets: [
       {
         href: '/katex/katex.min.css',
